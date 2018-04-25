@@ -26,7 +26,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 
 app.get('/productos', (req, res) => {
     db.collection('carros').find().toArray((err, result) => {
-            res.render('prod', {
+            res.render('index', {
                 productos: result
             });
         })
