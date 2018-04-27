@@ -24,7 +24,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 });
 
 
-app.get('/productos', (req, res) => {
+app.get('/transporte', (req, res) => {
     var carroCollection = db.collection('carros').find();
     
     if(req.query.marca){
@@ -32,26 +32,11 @@ app.get('/productos', (req, res) => {
     }
     carroCollection.toArray((err, result) => {
 
-        res.render('productos', {
+        res.render('transporte', {
             carros: result
         });
     })
 });
-
-app.get('/productos/', (req, res) => {
-    var carroCollection = db.collection('carros').find();
-    
-    if(req.query.marca){
-        carroCollection.filter({marca: req.query.marca});
-    }
-    carroCollection.toArray((err, result) => {
-
-        res.render('productos', {
-            carros: result
-        });
-    })
-});
-
 
 
 /*app.get('/carros/:id', (req, res) => {

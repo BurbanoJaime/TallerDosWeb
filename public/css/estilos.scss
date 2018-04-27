@@ -1,0 +1,152 @@
+//Colores
+$colorFondo: #eaeaea;
+$amarillo: #fab400;
+$negro: #474747;
+$gris: #afafaf;
+//espacios
+$margen: 3%;
+//Fuentes   
+@import url('https://fonts.googleapis.com/css?family=Signika:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,700i');
+$titilium: 'Titillium Web',
+sans-serif;
+$signikia: 'Signika',
+sans-serif;
+* {
+    font-family: $signikia;
+    padding: 0;
+    margin: 0;
+    transition: all .15s;
+    text-decoration: none;
+}
+
+header {
+    //Color de fondo del header
+    background-color: $colorFondo; //Sombra
+    box-shadow: 0px 7px 17px -2px rgba(0, 0, 0, 0.25); //Hace que el menú se mantenga hasta después de hacer scroll
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    padding: 10px 0;
+    .logo {
+        width: 120px; // margin-left: 1%;
+        margin-left: $margen;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: $negro;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    font-family: $signikia;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+    background: $colorFondo;
+}
+
+.dropdown-content a {
+    color: $negro;
+    font-family: $signikia;
+    font-weight: lighter;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all .2s;
+}
+
+.dropdown-content a:hover {
+    color: $negro !important;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    opacity: 1;
+    color: $amarillo;
+    text-decoration: underline;
+}
+
+.user {
+    margin-right: $margen;
+    color: $gris;
+    div:nth-child(2) {
+        margin: 0 25px;
+    }
+    div:hover {
+        color: $negro;
+    }
+}
+
+.mapaSitio {
+    padding: 0 $margen;
+    font-style: italic;
+    color: $gris;
+    font-family: $titilium;
+    font-weight: lighter;
+    margin-top: 120PX;
+    a {
+        color: $gris;
+        font-family: $titilium;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+    a:last-child {
+        color: $negro;
+        font-family: $titilium;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:last-child:hover {
+        color: $amarillo;
+    }
+}
+
+
+
+.filtro{
+
+}
+
+.productos{
+    
+}
+
+.flex-ext-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center
+}
+
+.flex-ext-hijo {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
