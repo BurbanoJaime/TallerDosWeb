@@ -25,7 +25,7 @@ header {
     background-color: $colorFondo; //Sombra
     box-shadow: 0px 7px 17px -2px rgba(0, 0, 0, 0.25); //Hace que el menú se mantenga hasta después de hacer scroll
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 1;
     padding: 10px 0;
@@ -126,14 +126,55 @@ header {
     }
 }
 
+.productos {
+    margin:0  $margen;
 
-
-.filtro{
-
-}
-
-.productos{
-    
+    article {
+        width: 260px;
+        background: $colorFondo; //padding-bottom: 10px;
+        box-sizing: border-box;
+        border: 2px solid rgba(175, 175, 175, .4);
+        padding-bottom: 20px;
+        margin: 18px;
+        .img-info {
+            img {
+                width: 100%;
+            }
+        }
+        h1 {
+            color: $amarillo;
+            font-weight: bold;
+            font-family: $signikia;
+            font-size: 25px;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        .info {
+            h2 {
+                color: $negro;
+                font-weight: 600;
+                font-family: $signikia;
+                font-size: 15px;
+                text-align: center;
+            }
+            p {
+                text-align: right;
+                font-family: $titilium;
+                font-weight: 400;
+                font-size: 13px;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .activo {
+            border: 2px solid rgba(250, 180, 0, 1) !important;
+        }
+    }
+    article:hover {
+        border: 2px solid rgba(175, 175, 175, 1);
+    }
 }
 
 .flex-ext-cont {
@@ -149,4 +190,13 @@ header {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;
+}
+
+.flex-basic-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }

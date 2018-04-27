@@ -12,7 +12,7 @@ header {
   background-color: #eaeaea;
   box-shadow: 0px 7px 17px -2px rgba(0, 0, 0, 0.25);
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0px;
   z-index: 1;
   padding: 10px 0;
@@ -121,6 +121,59 @@ header .logo img {
   color: #fab400;
 }
 
+.productos {
+  margin: 0 3%;
+}
+
+.productos article {
+  width: 260px;
+  background: #eaeaea;
+  box-sizing: border-box;
+  border: 2px solid rgba(175, 175, 175, 0.4);
+  padding-bottom: 20px;
+  margin: 18px;
+}
+
+.productos article .img-info img {
+  width: 100%;
+}
+
+.productos article h1 {
+  color: #fab400;
+  font-weight: bold;
+  font-family: "Signika", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.productos article .info h2 {
+  color: #474747;
+  font-weight: 600;
+  font-family: "Signika", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.productos article .info p {
+  text-align: right;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.productos article .activo {
+  border: 2px solid #fab400 !important;
+}
+
+.productos article:hover {
+  border: 2px solid #afafaf;
+}
+
 .flex-ext-cont {
   display: flex;
   flex-direction: row;
@@ -134,5 +187,14 @@ header .logo img {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
+}
+
+.flex-basic-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 /*# sourceMappingURL=estilos.css.map */
