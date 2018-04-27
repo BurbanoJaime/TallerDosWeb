@@ -99,81 +99,205 @@ header {
     }
 }
 
-.mapaSitio {
-    padding: 0 $margen;
-    font-style: italic;
-    color: $gris;
-    font-family: $titilium;
-    font-weight: lighter;
-    margin-top: 120PX;
-    a {
-        color: $gris;
-        font-family: $titilium;
-        font-weight: lighter;
-        text-decoration: none;
-    }
-    a:last-child {
-        color: $negro;
-        font-family: $titilium;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    a:last-child:hover {
-        color: $amarillo;
-    }
-}
 
-.productos {
-    margin:0  $margen;
 
-    article {
-        width: 260px;
-        background: $colorFondo; //padding-bottom: 10px;
-        box-sizing: border-box;
-        border: 2px solid rgba(175, 175, 175, .4);
-        padding-bottom: 20px;
-        margin: 18px;
-        .img-info {
-            img {
-                width: 100%;
+.contenedor {
+    margin: 0 $margen;
+    .izq {
+        position: fixed;
+        margin-top: 119px;
+
+        .mapaSitio {
+            padding: 0 $margen;
+            font-style: italic;
+            color: $gris;
+            font-family: $titilium;
+            font-weight: lighter;
+            a {
+                color: $gris;
+                font-family: $titilium;
+                font-weight: lighter;
+                text-decoration: none;
+            }
+            a:last-child {
+                color: $negro;
+                font-family: $titilium;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a:last-child:hover {
+                color: $amarillo;
             }
         }
-        h1 {
-            color: $amarillo;
-            font-weight: bold;
-            font-family: $signikia;
-            font-size: 25px;
-            text-align: center;
-            padding: 5px;
-            margin-bottom: 5px;
-        }
-        .info {
-            h2 {
-                color: $negro;
-                font-weight: 600;
-                font-family: $signikia;
-                font-size: 15px;
+
+        .filtro {
+            width: 350px;
+            border: 2px solid $gris;
+            margin-top: 18px;
+            padding: 15px;
+            box-sizing: border-box;
+            h3 {
+                background: $negro;
+                color: $colorFondo;
+                padding: 3%;
                 text-align: center;
+                font-size: 15px;
+                transition: all .2s;
+                margin: 20px 0;
+            }
+            .orden {
+                select {
+                    margin-left: 10px;
+                    font-family: $signikia;
+                }
+            }
+        }
+
+         h3 {
+            color: $amarillo;
+            font-family: $titilium;
+            font-weight: bolder;
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #afafaf;
+            font-size: 14px;
+            text-align: center;
+            margin-top: -8px;
+        }
+        input {
+            text-align: center;
+            width: 93%-7%;
+            margin: 5% 7%;
+            margin-bottom: 8%;
+            height: 25px;
+            input[type="text"]:placeholder {
+                font-style: italic;
+            }
+        }
+        div {
+            background: $negro;
+            width: 93%-7%;
+            margin-left: 7%;
+            margin-bottom: 7%;
+            p {
+                color: $colorFondo;
+                font-family: $titilium;
+                font-weight: bolder;
+                transition: all .2s;
+                padding: 3% 0;
+            }
+        }
+        div:hover {
+            background: $amarillo;
+            cursor: pointer;
+            p {
+                color: $negro;
+            }
+        }
+        .suscribete{
+            margin-top: 20px;
+            border: 2px solid $gris;
+            h3 {
+                color: $amarillo;
+                font-family: $titilium;
+                font-weight: bolder;
+                font-size: 40px;
+                text-align: center;
+                letter-spacing: 1px;
             }
             p {
-                text-align: right;
-                font-family: $titilium;
-                font-weight: 400;
-                font-size: 13px;
+                color: #afafaf;
+                font-size: 14px;
                 text-align: center;
-                padding: 0;
-                margin: 0;
+                margin-top: -8px;
+            }
+            input {
+                text-align: center;
+                width: 93%-7%;
+                margin: 5% 7%;
+                margin-bottom: 8%;
+                height: 25px;
+                input[type="text"]:placeholder {
+                    font-style: italic;
+                }
+            }
+            div {
+                background: $negro;
+                width: 93%-7%;
+                margin-left: 7%;
+                margin-bottom: 7%;
+                p {
+                    color: $colorFondo;
+                    font-family: $titilium;
+                    font-weight: bolder;
+                    transition: all .2s;
+                    padding: 3% 0;
+                }
+            }
+            div:hover {
+                background: $amarillo;
+                cursor: pointer;
+                p {
+                    color: $negro;
+                }
             }
         }
-        .activo {
-            border: 2px solid rgba(250, 180, 0, 1) !important;
-        }
     }
-    article:hover {
-        border: 2px solid rgba(175, 175, 175, 1);
+    .productos {
+        margin-left: 360px;
+        margin-top: 150px;
+        article {
+            width: 260px;
+            background: $colorFondo;
+            box-sizing: border-box;
+            border: 2px solid rgba(175, 175, 175, .4);
+            padding-bottom: 20px;
+            margin: 10px;
+            .img-info {
+                img {
+                    width: 100%;
+                }
+            }
+            h1 {
+                color: $amarillo;
+                font-weight: bold;
+                font-family: $signikia;
+                font-size: 25px;
+                text-align: center;
+                padding: 5px;
+                margin-bottom: 5px;
+            }
+            .info {
+                h2 {
+                    color: $negro;
+                    font-weight: 600;
+                    font-family: $signikia;
+                    font-size: 15px;
+                    text-align: center;
+                }
+                p {
+                    text-align: right;
+                    font-family: $titilium;
+                    font-weight: 400;
+                    font-size: 13px;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .activo {
+                border: 2px solid rgba(250, 180, 0, 1) !important;
+            }
+        }
+        article:hover {
+            border: 2px solid rgba(175, 175, 175, 1);
+        }
     }
 }
 
@@ -192,7 +316,7 @@ header {
     align-self: auto;
 }
 
-.flex-basic-cont{
+.flex-basic-cont {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

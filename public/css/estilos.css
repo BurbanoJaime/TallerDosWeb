@@ -90,55 +90,196 @@ header .logo img {
   color: #474747;
 }
 
-.mapaSitio {
+.contenedor {
+  margin: 0 3%;
+}
+
+.contenedor .izq {
+  position: fixed;
+  margin-top: 119px;
+}
+
+.contenedor .izq .mapaSitio {
   padding: 0 3%;
   font-style: italic;
   color: #afafaf;
   font-family: "Titillium Web", sans-serif;
   font-weight: lighter;
-  margin-top: 120PX;
 }
 
-.mapaSitio a {
+.contenedor .izq .mapaSitio a {
   color: #afafaf;
   font-family: "Titillium Web", sans-serif;
   font-weight: lighter;
   text-decoration: none;
 }
 
-.mapaSitio a:last-child {
+.contenedor .izq .mapaSitio a:last-child {
   color: #474747;
   font-family: "Titillium Web", sans-serif;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.mapaSitio a:hover {
+.contenedor .izq .mapaSitio a:hover {
   text-decoration: underline;
 }
 
-.mapaSitio a:last-child:hover {
+.contenedor .izq .mapaSitio a:last-child:hover {
   color: #fab400;
 }
 
-.productos {
-  margin: 0 3%;
+.contenedor .izq .filtro {
+  width: 350px;
+  border: 2px solid #afafaf;
+  margin-top: 18px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
-.productos article {
+.contenedor .izq .filtro h3 {
+  background: #474747;
+  color: #eaeaea;
+  padding: 3%;
+  text-align: center;
+  font-size: 15px;
+  transition: all .2s;
+  margin: 20px 0;
+}
+
+.contenedor .izq .filtro .orden select {
+  margin-left: 10px;
+  font-family: "Signika", sans-serif;
+}
+
+.contenedor .izq h3 {
+  color: #fab400;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contenedor .izq p {
+  color: #afafaf;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -8px;
+}
+
+.contenedor .izq input {
+  text-align: center;
+  width: 86%;
+  margin: 5% 7%;
+  margin-bottom: 8%;
+  height: 25px;
+}
+
+.contenedor .izq input input[type="text"]:placeholder {
+  font-style: italic;
+}
+
+.contenedor .izq div {
+  background: #474747;
+  width: 86%;
+  margin-left: 7%;
+  margin-bottom: 7%;
+}
+
+.contenedor .izq div p {
+  color: #eaeaea;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  transition: all .2s;
+  padding: 3% 0;
+}
+
+.contenedor .izq div:hover {
+  background: #fab400;
+  cursor: pointer;
+}
+
+.contenedor .izq div:hover p {
+  color: #474747;
+}
+
+.contenedor .izq .suscribete {
+  margin-top: 20px;
+  border: 2px solid #afafaf;
+}
+
+.contenedor .izq .suscribete h3 {
+  color: #fab400;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contenedor .izq .suscribete p {
+  color: #afafaf;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -8px;
+}
+
+.contenedor .izq .suscribete input {
+  text-align: center;
+  width: 86%;
+  margin: 5% 7%;
+  margin-bottom: 8%;
+  height: 25px;
+}
+
+.contenedor .izq .suscribete input input[type="text"]:placeholder {
+  font-style: italic;
+}
+
+.contenedor .izq .suscribete div {
+  background: #474747;
+  width: 86%;
+  margin-left: 7%;
+  margin-bottom: 7%;
+}
+
+.contenedor .izq .suscribete div p {
+  color: #eaeaea;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  transition: all .2s;
+  padding: 3% 0;
+}
+
+.contenedor .izq .suscribete div:hover {
+  background: #fab400;
+  cursor: pointer;
+}
+
+.contenedor .izq .suscribete div:hover p {
+  color: #474747;
+}
+
+.contenedor .productos {
+  margin-left: 360px;
+  margin-top: 150px;
+}
+
+.contenedor .productos article {
   width: 260px;
   background: #eaeaea;
   box-sizing: border-box;
   border: 2px solid rgba(175, 175, 175, 0.4);
   padding-bottom: 20px;
-  margin: 18px;
+  margin: 10px;
 }
 
-.productos article .img-info img {
+.contenedor .productos article .img-info img {
   width: 100%;
 }
 
-.productos article h1 {
+.contenedor .productos article h1 {
   color: #fab400;
   font-weight: bold;
   font-family: "Signika", sans-serif;
@@ -148,7 +289,7 @@ header .logo img {
   margin-bottom: 5px;
 }
 
-.productos article .info h2 {
+.contenedor .productos article .info h2 {
   color: #474747;
   font-weight: 600;
   font-family: "Signika", sans-serif;
@@ -156,7 +297,7 @@ header .logo img {
   text-align: center;
 }
 
-.productos article .info p {
+.contenedor .productos article .info p {
   text-align: right;
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
@@ -166,11 +307,11 @@ header .logo img {
   margin: 0;
 }
 
-.productos article .activo {
+.contenedor .productos article .activo {
   border: 2px solid #fab400 !important;
 }
 
-.productos article:hover {
+.contenedor .productos article:hover {
   border: 2px solid #afafaf;
 }
 
