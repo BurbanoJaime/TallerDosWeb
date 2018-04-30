@@ -152,56 +152,9 @@ header .logo img {
   font-family: "Signika", sans-serif;
 }
 
-.contenedor .izq h3 {
-  color: #fab400;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: bolder;
-  font-size: 40px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-.contenedor .izq p {
-  color: #afafaf;
-  font-size: 14px;
-  text-align: center;
-  margin-top: -8px;
-}
-
-.contenedor .izq input {
-  text-align: center;
-  width: 86%;
-  margin: 5% 7%;
-  margin-bottom: 8%;
-  height: 25px;
-}
-
-.contenedor .izq input input[type="text"]:placeholder {
-  font-style: italic;
-}
-
-.contenedor .izq div {
-  background: #474747;
-  width: 86%;
-  margin-left: 7%;
-  margin-bottom: 7%;
-}
-
-.contenedor .izq div p {
-  color: #eaeaea;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: bolder;
-  transition: all .2s;
-  padding: 3% 0;
-}
-
-.contenedor .izq div:hover {
+.contenedor .izq .filtro .borrar:hover {
   background: #fab400;
-  cursor: pointer;
-}
-
-.contenedor .izq div:hover p {
-  color: #474747;
+  color: #eaeaea;
 }
 
 .contenedor .izq .suscribete {

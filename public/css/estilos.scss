@@ -154,52 +154,14 @@ header {
                     font-family: $signikia;
                 }
             }
-        }
 
-         h3 {
-            color: $amarillo;
-            font-family: $titilium;
-            font-weight: bolder;
-            font-size: 40px;
-            text-align: center;
-            letter-spacing: 1px;
-        }
-        p {
-            color: #afafaf;
-            font-size: 14px;
-            text-align: center;
-            margin-top: -8px;
-        }
-        input {
-            text-align: center;
-            width: 93%-7%;
-            margin: 5% 7%;
-            margin-bottom: 8%;
-            height: 25px;
-            input[type="text"]:placeholder {
-                font-style: italic;
-            }
-        }
-        div {
-            background: $negro;
-            width: 93%-7%;
-            margin-left: 7%;
-            margin-bottom: 7%;
-            p {
+            .borrar:hover{
+                background: $amarillo;
                 color: $colorFondo;
-                font-family: $titilium;
-                font-weight: bolder;
-                transition: all .2s;
-                padding: 3% 0;
+
             }
         }
-        div:hover {
-            background: $amarillo;
-            cursor: pointer;
-            p {
-                color: $negro;
-            }
-        }
+      
         .suscribete{
             margin-top: 20px;
             border: 2px solid $gris;
