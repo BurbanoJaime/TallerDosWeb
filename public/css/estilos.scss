@@ -38,6 +38,7 @@ header {
     }
 }
 
+//Menú de navegación
 .dropbtn {
     background-color: transparent;
     color: $negro;
@@ -99,14 +100,25 @@ header {
     }
 }
 
+//Banner
+.banner {
+    //tamaño del banner
+    height: 60vh;
+    width: 100%; //Imagen de fondo
+    background-image: url("/img/banner/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -220px;
+    box-shadow: inset 0px 7px 45px 0px rgba(0, 0, 0, 0.5);
+    margin-top: $margen;
+}
 
-
+//Informacion de la pagina de visualización de productos de carros
 .contenedor {
     margin: 0 $margen;
     .izq {
         position: fixed;
         margin-top: 119px;
-
         .mapaSitio {
             padding: 0 $margen;
             font-style: italic;
@@ -132,7 +144,7 @@ header {
                 color: $amarillo;
             }
         }
-
+        //Filtro de productos
         .filtro {
             width: 350px;
             border: 2px solid $gris;
@@ -154,15 +166,12 @@ header {
                     font-family: $signikia;
                 }
             }
-
-            .borrar:hover{
+            .borrar:hover {
                 background: $amarillo;
                 color: $colorFondo;
-
             }
         }
-      
-        .suscribete{
+        .suscribete {
             margin-top: 20px;
             border: 2px solid $gris;
             h3 {
@@ -210,7 +219,7 @@ header {
                 }
             }
         }
-    }
+    } //Visualizacion de productos
     .productos {
         margin-left: 360px;
         margin-top: 150px;

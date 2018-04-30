@@ -90,6 +90,17 @@ header .logo img {
   color: #474747;
 }
 
+.banner {
+  height: 60vh;
+  width: 100%;
+  background-image: url("/img/banner/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -220px;
+  box-shadow: inset 0px 7px 45px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 3%;
+}
+
 .contenedor {
   margin: 0 3%;
 }

@@ -1,4 +1,5 @@
 const MongoClient = require('mongodb').MongoClient,
+    ObjectID = require('mongodb').ObjectID,
     express = require('express'),
     engines = require('consolidate');
 
@@ -24,21 +25,21 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 });
 
 
+// Dirección del index
+app.get('/index', (req, res) => {
+    res.render('index');
+});
+
+
+// Dirección de visualización de productos de Alquiler de Vehículos
 app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
+
     var carroCollection = db.collection('carros').find();
-    
-    if(req.query.marca){
-        carroCollection.filter({marca: req.query.marca});
-    }
+
     carroCollection.toArray((err, result) => {
 
-        res.render('transporte', {
+        res.render('transporte_Carros', {
             carros: result
         });
     })
 });
-
-
-/*app.get('/carros/:id', (req, res) => {
-    db.collection('carros').find({ modelo: req.params.id }).toArray((err, result) => res.send(result))
-*/
