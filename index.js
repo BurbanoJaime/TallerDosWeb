@@ -43,3 +43,14 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
         });
     })
 });
+
+//Dirección de visualización de cada producto en forma detallada
+/*app.get('/transporte/Alquiler_Vehiculos/+_id', (req, res) => {
+    db.collection('carros').find({ id: req.params.id }).toArray((err, result) => res.render( 'det_prod', {
+        id:result
+    }))
+})*/
+
+app.get('/prod', (req, res) => {
+    res.render('det_prod');
+});

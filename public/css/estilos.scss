@@ -143,8 +143,7 @@ header {
             a:last-child:hover {
                 color: $amarillo;
             }
-        }
-        //Filtro de productos
+        } //Filtro de productos
         .filtro {
             width: 350px;
             border: 2px solid $gris;
@@ -276,6 +275,42 @@ header {
     }
 }
 
+//Visualización del producto
+.producto_Detallado {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 119px;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+
+    .imagenes {
+        width: 50%;
+        box-sizing: border-box;
+        background-color: $negro;
+        .img_principal {
+            width: 750px;
+            height: 500px;
+            background-color: $amarillo;
+        }
+    }
+    .info_prod {
+        width: 50%;
+        box-sizing: border-box;
+        div {
+            text-align: center;
+            width: 50%;
+            border-bottom: 3px solid $amarillo;
+        }
+    }
+    h1 {
+        font-size: 30px;
+        color: $amarillo;
+    }
+}
+
 .flex-ext-cont {
     display: flex;
     flex-direction: row;
@@ -294,8 +329,8 @@ header {
 .flex-basic-cont {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
 }

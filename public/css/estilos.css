@@ -286,6 +286,44 @@ header .logo img {
   border: 2px solid #afafaf;
 }
 
+.producto_Detallado {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 119px;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.producto_Detallado .imagenes {
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #474747;
+}
+
+.producto_Detallado .imagenes .img_principal {
+  width: 750px;
+  height: 500px;
+  background-color: #fab400;
+}
+
+.producto_Detallado .info_prod {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.producto_Detallado .info_prod div {
+  text-align: center;
+  width: 50%;
+  border-bottom: 3px solid #fab400;
+}
+
+.producto_Detallado h1 {
+  font-size: 30px;
+  color: #fab400;
+}
+
 .flex-ext-cont {
   display: flex;
   flex-direction: row;
@@ -304,9 +342,9 @@ header .logo img {
 .flex-basic-cont {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 /*# sourceMappingURL=estilos.css.map */
