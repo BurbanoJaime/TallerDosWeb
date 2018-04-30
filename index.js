@@ -24,7 +24,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 });
 
 
-app.get('/transporte', (req, res) => {
+app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
     var carroCollection = db.collection('carros').find();
     
     if(req.query.marca){

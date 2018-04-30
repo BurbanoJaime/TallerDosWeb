@@ -15,7 +15,7 @@
         crossorigin="anonymous">
 
     <!-- Titulo -->
-    <title>Prex | {{titulo}}</title>
+    <title>Prex | Alquiler de Vehículos </title>
 
 </head>
 
@@ -23,7 +23,7 @@
     <header>
         <nav class="flex-ext-cont">
             <div class="logo">
-                <a href="#">
+                <a href="/index">
                     <img src="/img/logo.png" alt="Logo">
                 </a>
             </div>
@@ -32,7 +32,7 @@
                 <div class="dropdown">
                     <button class="dropbtn">TRANSPORTE</button>
                     <div class="dropdown-content">
-                        <a href="#">Alquiler de Vehículos</a>
+                        <a href="/transporte/Alquiler_Vehiculos">Alquiler de Vehículos</a>
                         <a href="#">Grúas</a>
                         <a href="#">Mensajería</a>
                         <a href="#">Personal</a>
@@ -113,9 +113,9 @@
     <section class="contenedor flex-basic-cont">
         <section class="izq">
             <p class="mapaSitio">
-                <a href="index.html">PREX </a> /
-                <a href="#">TRANSPORTE </a>/
-                <a href="alquilerVehiculos.html">ALQUILER DE VEHÍCULOS</a>
+                <a href="/index">PREX </a> /
+                <a href="">TRANSPORTE </a>/
+                <a href="/transporte/Alquiler_Vehiculos">ALQUILER DE VEHÍCULOS</a>
             </p>
             <section class="filtro">
                 <article class=" flex-ext-cont orden">
@@ -167,12 +167,12 @@
             <article>
                 <a href="#">
                     <div class="img-info">
-                        <img src="/img/transporte/renault 4/Renault.jpg">
+                        <img src="{{imaUno}}">
                     </div>
                     <h1>{{marca}} {{modelo}}</h1>
                     <div class="info">
-                        <h2>400.000 COP</h2>
-                        <p>Precio diario por unidad</p>
+                        <h2>$ {{precio}} COP</h2>
+                        <p>PRECIO DIARIO POR UNIDAD</p>
                     </div>
                 </a>
             </article>

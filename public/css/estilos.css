@@ -221,11 +221,17 @@ header .logo img {
 
 .contenedor .productos article {
   width: 260px;
-  background: #eaeaea;
+  background: #fafafa;
   box-sizing: border-box;
   border: 2px solid rgba(175, 175, 175, 0.4);
   padding-bottom: 20px;
   margin: 10px;
+}
+
+.contenedor .productos article .img-info {
+  background-color: #FFF;
+  width: 256px;
+  height: 210px;
 }
 
 .contenedor .productos article .img-info img {
@@ -258,6 +264,7 @@ header .logo img {
   text-align: center;
   padding: 0;
   margin: 0;
+  color: #474747;
 }
 
 .contenedor .productos article .activo {
