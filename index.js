@@ -44,18 +44,6 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
     })
 });
 
-/*app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
-    db.collection('carros').find({
-        _id: req.params.id
-    }).toArray((err, result) => {
-        console.log(result);
-        res.render('det_prod', {
-            carro: result[0]
-
-        });
-    })
-});*/
-
 
 app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
 
@@ -75,8 +63,30 @@ app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
 });
 
 
+/* FILTROS */
+// Filtro de precio
+app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
+    /*db.collection('productos')
+        .find()
+        .toArray((err, result) => {
+            res.render('index', {
+                productos: result
+            });
+        })*/
 
+    var prod = db.collection('carros')
+        .find();
+    
+    if(req.query.precio)
+        prod.filter({ precio: req.query.precio });
 
-app.get('/prod', (req, res) => {
-    res.render('det_prod');
+   /* if(req.query.modelo)
+        prod.filter({ modelo: req.query.modelo });*/
+
+    prod.toArray((err, result) => {
+            console.log('hola servidor')
+            res.render('det_prod', {
+                productos: result
+            });
+        })
 });

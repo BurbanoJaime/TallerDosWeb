@@ -1,40 +1,37 @@
-@supports (--css: variables) {
-	
+.slidecontainer {
+    width: 100%;
+}
 
-	input[type="range"].multirange.original {
-		position: absolute;
-	}
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;
+    background: #fab400;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
 
-		input[type="range"].multirange.original::-webkit-slider-thumb {
-			position: relative;
-			z-index: 2;
-		}
+.slider:hover {
+    opacity: 1;
+}
 
-		input[type="range"].multirange.original::-moz-range-thumb {
-			transform: scale(1); /* FF doesn't apply position it seems */
-			z-index: 1;
-		}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #474747;
+    cursor: pointer;
+}
 
-		input[type="range"].multirange::-moz-range-track {
-			border-color: transparent; /* needed to switch FF to "styleable" control */
-		}
-
-	input[type="range"].multirange.ghost {
-		position: relative;
-		background: var(--track-background);
-		--track-background: linear-gradient(to right,
-				transparent var(--low), var(--range-color) 0,
-				var(--range-color) var(--high), transparent 0
-			) no-repeat 0 45% / 100% 40%;
-		--range-color: hsl(190, 80%, 40%);
-	}
-
-		input[type="range"].multirange.ghost::-webkit-slider-runnable-track {
-			background: var(--track-background);
-		}
-
-		input[type="range"].multirange.ghost::-moz-range-track {
-			background: var(--track-background);
-		}
-
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #474747;
+    cursor: pointer;
 }

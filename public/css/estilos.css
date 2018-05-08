@@ -165,28 +165,6 @@ header .logo img {
   font-family: "Signika", sans-serif;
 }
 
-.contenedor .izq .filtro .rango #slider-range .ui-widget-header {
-  background: #fab400;
-}
-
-.contenedor .izq .filtro .rango #slider-range .ui-state-default {
-  background-color: #fab400;
-  border: solid #474747;
-  border-width: 1px;
-  border-radius: 10px;
-}
-
-.contenedor .izq .filtro .rango p {
-  text-align: center;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 500;
-}
-
-.contenedor .izq .filtro .rango p #amount {
-  font-size: 15px;
-  width: 86%;
-}
-
 .contenedor .izq .filtro .color div {
   width: 100%;
 }
