@@ -167,9 +167,105 @@ header {
                     font-family: $signikia;
                 }
             }
+            .rango {
+                #slider-range {
+                    .ui-widget-header {
+                        background: $amarillo;
+                    }
+                    .ui-state-default {
+                        background-color: $amarillo;
+                        border: solid $negro;
+                        border-width: 1px;
+                        border-radius: 10px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    //margin-top: 2%;
+                    font-family: $titilium;
+                    font-weight: 500;
+                    #amount {
+                        font-size: 15px;
+                        width: 86%;
+                        //margin: 0 7%;
+                    }
+                }
+            }
+            .color {
+                div{
+                    width: 100%;
+                    a {
+                        padding: 10px 20px;
+                        border: solid 2px transparent;
+                    }
+                    a:hover {
+                        border: solid 2px $amarillo;
+                    }
+                }
+                .coloruno {                    
+                    a:nth-child(1) {
+                        background-color: red;
+                    }
+                    a:nth-child(2) {
+                        background-color: red;
+                    }
+                    a:nth-child(3) {
+                        background-color: red;
+                    }
+                    a:nth-child(4) {
+                        background-color: red;
+                    }
+                    a:nth-child(5) {
+                        background-color: red;
+                    }
+                }
+                .colordos {
+                    margin-top: 20px;
+                    a:nth-child(1) {
+                        background-color: red;
+                    }
+                    a:nth-child(2) {
+                        background-color: red;
+                    }
+                    a:nth-child(3) {
+                        background-color: red;
+                    }
+                    a:nth-child(4) {
+                        background-color: red;
+                    }
+                    a:nth-child(5) {
+                        background-color: red;
+                    }
+                }
+            }
+            .tema {
+                text-align: center;
+                select {
+                    width: 100%;
+                }
+            }
+            .borrar {
+                a {
+                    div {
+                        background-color: $negro;
+                        padding: 3%;
+                        text-align: center;
+                        transition: all .2s;
+                        margin: 20px 0;
+                        color: $colorFondo;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+                }
+            }
             .borrar:hover {
-                background: $amarillo;
-                color: $colorFondo;
+                a {
+                    div {
+                        background: $amarillo;
+                        color: $colorFondo;
+                        color: $negro;
+                    }
+                }
             }
         }
         .suscribete {
@@ -276,7 +372,6 @@ header {
     width: 100%;
     .imagenes {
         width: 50%;
-
         text-align: center;
         .img_principal {
             height: 100%;
@@ -287,6 +382,7 @@ header {
                 width: 85vh;
                 height: 50vh;
                 border: 2px solid $amarillo;
+                background-size: cover;
             }
         }
         .imgs_secundarias {
@@ -301,7 +397,6 @@ header {
                 border: 2px solid white;
                 transition: all .2s;
                 border: 2px solid $gris;
-
             }
             div:hover {
                 border: 2px solid $amarillo;
@@ -310,20 +405,18 @@ header {
         .imgs_secundarias:first-child {
             margin-top: 10vh;
         }
-        .imgs_secundarias:last-child {
-            div:last-child {
+        .imgs_secundarias {
+            .ocho {
                 background: transparent;
                 border: 2px solid transparent;
-
             }
-            div:last-child:hover {
+            .ocho:hover {
                 border: 2px solid transparent;
             }
         }
     }
     .info_prod {
         width: 50%;
-  
         box-sizing: border-box;
     }
     h1 {

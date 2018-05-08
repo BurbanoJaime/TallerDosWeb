@@ -65,7 +65,7 @@ app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
             _id: new ObjectID(req.params.id)
         })
         .toArray((err, result) => {
-            console.log(result[0]);
+           // console.log(result[0]);
             res.render('det_prod', {
                 carro: result[0]
 

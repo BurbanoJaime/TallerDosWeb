@@ -165,9 +165,108 @@ header .logo img {
   font-family: "Signika", sans-serif;
 }
 
-.contenedor .izq .filtro .borrar:hover {
+.contenedor .izq .filtro .rango #slider-range .ui-widget-header {
+  background: #fab400;
+}
+
+.contenedor .izq .filtro .rango #slider-range .ui-state-default {
+  background-color: #fab400;
+  border: solid #474747;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.contenedor .izq .filtro .rango p {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+}
+
+.contenedor .izq .filtro .rango p #amount {
+  font-size: 15px;
+  width: 86%;
+}
+
+.contenedor .izq .filtro .color div {
+  width: 100%;
+}
+
+.contenedor .izq .filtro .color div a {
+  padding: 10px 20px;
+  border: solid 2px transparent;
+}
+
+.contenedor .izq .filtro .color div a:hover {
+  border: solid 2px #fab400;
+}
+
+.contenedor .izq .filtro .color .coloruno a:nth-child(1) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .coloruno a:nth-child(2) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .coloruno a:nth-child(3) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .coloruno a:nth-child(4) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .coloruno a:nth-child(5) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .colordos {
+  margin-top: 20px;
+}
+
+.contenedor .izq .filtro .color .colordos a:nth-child(1) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .colordos a:nth-child(2) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .colordos a:nth-child(3) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .colordos a:nth-child(4) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .color .colordos a:nth-child(5) {
+  background-color: red;
+}
+
+.contenedor .izq .filtro .tema {
+  text-align: center;
+}
+
+.contenedor .izq .filtro .tema select {
+  width: 100%;
+}
+
+.contenedor .izq .filtro .borrar a div {
+  background-color: #474747;
+  padding: 3%;
+  text-align: center;
+  transition: all .2s;
+  margin: 20px 0;
+  color: #eaeaea;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.contenedor .izq .filtro .borrar:hover a div {
   background: #fab400;
   color: #eaeaea;
+  color: #474747;
 }
 
 .contenedor .izq .suscribete {
@@ -300,6 +399,7 @@ header .logo img {
   width: 85vh;
   height: 50vh;
   border: 2px solid #fab400;
+  background-size: cover;
 }
 
 .producto_detallado .imagenes .imgs_secundarias {
@@ -326,12 +426,12 @@ header .logo img {
   margin-top: 10vh;
 }
 
-.producto_detallado .imagenes .imgs_secundarias:last-child div:last-child {
+.producto_detallado .imagenes .imgs_secundarias .ocho {
   background: transparent;
   border: 2px solid transparent;
 }
 
-.producto_detallado .imagenes .imgs_secundarias:last-child div:last-child:hover {
+.producto_detallado .imagenes .imgs_secundarias .ocho:hover {
   border: 2px solid transparent;
 }
 

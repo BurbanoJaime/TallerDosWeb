@@ -8,11 +8,18 @@
 
     <!-- Importadas -->
     <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/multirange.css">
     <link rel="icon" type="image/png" href="/img/icono.ico" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
         crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="/js/multirange.js"></script>
 
     <!-- Titulo -->
     <title>Prex | Alquiler de Vehículos </title>
@@ -122,7 +129,6 @@
                     <p>Ordenar por</p>
 
                     <select name="orden">
-                        <option value="0" selected>Default</option>
                         <option value="1">Precio Ascendente</option>
                         <option value="2">Precio Descendente</option>
                         <option value="3">Descuentos</option>
@@ -134,20 +140,50 @@
                     <h3>Calendario</h3>
                 </article>
 
-                <article class="precio">
-                    <h3>Precio</h3>
+                <article class="rango">
+                    <h3>PRECIO</h3>
+                    <div id="slider-range"></div>
+                    <p>
+                        <label for="amount">Desde - Hasta</label>
+                        <br>
+                        <input type="text" id="amount" readonly>
+                    </p>
                 </article>
 
                 <article class="color">
-                    <h3>Precio</h3>
+                    <h3>Color</h3>
+                    <div class="flex-ext-cont coloruno">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <div class="flex-ext-cont colordos">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
                 </article>
 
                 <article class="tema">
                     <h3>Temática</h3>
+                    <select name="tematica" id="tematica">
+                        <option value="0">Ninguno</option>
+                        <option value="1">Fantasía</option>
+                        <option value="2">Acción</option>
+                        <option value="3">Romance</option>
+                        <option value="4">Vaqueros</option>
+                        <option value="5">Comedia</option>
+                    </select>
                 </article>
 
                 <article class="borrar">
-                    <h3>Borrar Filtros</h3>
+                    <a href="/transporte/Alquiler_Vehiculos">
+                        <div> Borrar Filtros</div>
+                    </a>
                 </article>
             </section>
 
@@ -194,7 +230,7 @@
             </p>
         </div>
 
-        <div >
+        <div>
             <h1>SERVICIOS</h1>
             <p>
                 <a href="#">Transporte</a>
@@ -216,33 +252,34 @@
             </p>
         </div>
 
-        <div >
+        <div>
             <h1>REDES SOCIALES</h1>
             <div class="logos flex-ext-cont">
-                
-                    <a 
-                        <i class="fab fa-instagram"></i>
-                    </a>
-              
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-               
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                
+
+                <a <i class="fab fa-instagram">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
             </div>
         </div>
 
         <div>
-                        <h1>SUSCRIBETE</h1>
+            <h1>SUSCRIBETE</h1>
 
             <div class="suscribete flex-ext-cont">
                 <input type="text" placeholder="prex@prex.com">
                 <button>Suscribir</button>
             </div>
         </div>
+
 
     </footer>
 </body>
