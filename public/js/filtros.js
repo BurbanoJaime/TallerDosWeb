@@ -1,3 +1,15 @@
+/**Filtro de calendario */
+//Calendario
+$(function () {
+    $.datepicker.setDefaults($.datepicker.regional["es"]);
+    $("#datepicker").datepicker({
+        firstDay: 1
+    });
+});
+
+$("#datepicker").datepicker().show();
+
+/**Filtro de precio */
 /* Valor del rango desde*/
 
 var sliderDesde = document.getElementById("desde");

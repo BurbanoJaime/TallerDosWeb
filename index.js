@@ -80,8 +80,8 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
     if(req.query.precio)
         prod.filter({ precio: req.query.precio });
 
-   /* if(req.query.modelo)
-        prod.filter({ modelo: req.query.modelo });*/
+        if(req.query.color)
+        prod.filter({ marca: req.query.color });
 
     prod.toArray((err, result) => {
             console.log('hola servidor')

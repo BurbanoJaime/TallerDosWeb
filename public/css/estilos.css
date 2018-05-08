@@ -165,6 +165,51 @@ header .logo img {
   font-family: "Signika", sans-serif;
 }
 
+.contenedor .izq .filtro .calendario #datapicker {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor .izq .filtro .calendario .ui-datepicker-header {
+  background: #474747;
+  color: #eaeaea;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor .izq .filtro .calendario .ui-datepicker-inline {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contenedor .izq .filtro .calendario .ui-state-active {
+  background: #afafaf;
+  color: #474747;
+  font-weight: 400;
+  border: #c5c5c5;
+}
+
+.contenedor .izq .filtro .calendario .ui-state-highlight {
+  background: #fab400;
+  border: #c5c5c5;
+  font-weight: 600;
+  color: #474747;
+}
+
+.contenedor .izq .filtro .calendario .ui-state-default {
+  text-align: center;
+}
+
+.contenedor .izq .filtro .calendario .ui-datepicker-next {
+  background-color: #eaeaea;
+}
+
+.contenedor .izq .filtro .calendario .ui-datepicker-prev {
+  background-color: #eaeaea;
+}
+
 .contenedor .izq .filtro .color div {
   width: 100%;
 }
@@ -183,19 +228,19 @@ header .logo img {
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(2) {
-  background-color: red;
+  background-color: blueviolet;
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(3) {
-  background-color: red;
+  background-color: #fab400;
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(4) {
-  background-color: red;
+  background-color: #474747;
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(5) {
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.726);
 }
 
 .contenedor .izq .filtro .color .colordos {

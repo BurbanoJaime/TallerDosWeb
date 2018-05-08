@@ -8,8 +8,10 @@ $margen: 3%;
 //Fuentes   
 @import url('https://fonts.googleapis.com/css?family=Signika:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,700i');
-$titilium: 'Titillium Web',sans-serif;
-$signikia: 'Signika',sans-serif;
+$titilium: 'Titillium Web',
+sans-serif;
+$signikia: 'Signika',
+sans-serif;
 * {
     font-family: $signikia;
     padding: 0;
@@ -165,6 +167,47 @@ header {
                     font-family: $signikia;
                 }
             }
+            .calendario {
+                #datapicker {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .ui-datepicker-header {
+                    background: $negro;
+                    color: $colorFondo;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .ui-datepicker-inline {
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+                .ui-state-active {
+                    background: $gris;
+                    color: $negro;
+                    font-weight: 400;
+                    border: #c5c5c5;
+                }
+                .ui-state-highlight {
+                    background: $amarillo;
+                    border: #c5c5c5;
+                    font-weight: 600;
+                    color: $negro;
+                }
+                .ui-state-default{
+                    text-align: center;
+                }
+                .ui-datepicker-next{
+                    background-color: $colorFondo;
+                }
+
+                .ui-datepicker-prev{
+                    background-color: $colorFondo;
+                }
+                
+            }
             .color {
                 div {
                     width: 100%;
@@ -181,16 +224,16 @@ header {
                         background-color: red;
                     }
                     a:nth-child(2) {
-                        background-color: red;
+                        background-color: blueviolet;
                     }
                     a:nth-child(3) {
-                        background-color: red;
+                        background-color: $amarillo;
                     }
                     a:nth-child(4) {
-                        background-color: red;
+                        background-color: $negro;
                     }
                     a:nth-child(5) {
-                        background-color: red;
+                        background-color: rgba(255, 255, 255, 0.726);
                     }
                 }
                 .colordos {
