@@ -119,6 +119,7 @@ header {
     .izq {
         position: fixed;
         margin-top: 119px;
+        height: 90vh;
         .mapaSitio {
             padding: 0 $margen;
             font-style: italic;
@@ -213,7 +214,7 @@ header {
     } //Visualizacion de productos
     .productos {
         margin-left: 360px;
-        margin-top: 119px;
+        margin-top: 110px;
         article {
             width: 260px;
             background: #fafafa;
@@ -270,11 +271,12 @@ header {
 //Visualización del producto
 .producto_detallado {
     margin-top: 110px;
-    margin-left: $margen;
-    margin-right: $margen;
+    padding-left: 0 $margen;
+    box-sizing: border-box;
+    width: 100%;
     .imagenes {
         width: 50%;
-        height: 50vh; // float: left;
+
         text-align: center;
         .img_principal {
             height: 100%;
@@ -282,9 +284,8 @@ header {
             display: flex;
             justify-content: center;
             div {
-                width: 80vh;
+                width: 85vh;
                 height: 50vh;
-                background: black;
                 border: 2px solid $amarillo;
             }
         }
@@ -296,9 +297,11 @@ header {
             div {
                 width: 15vh;
                 height: 15vh;
-                background-color: black;
+                background-size: cover;
                 border: 2px solid white;
                 transition: all .2s;
+                border: 2px solid $gris;
+
             }
             div:hover {
                 border: 2px solid $amarillo;
@@ -310,6 +313,8 @@ header {
         .imgs_secundarias:last-child {
             div:last-child {
                 background: transparent;
+                border: 2px solid transparent;
+
             }
             div:last-child:hover {
                 border: 2px solid transparent;
@@ -317,8 +322,9 @@ header {
         }
     }
     .info_prod {
-        width: 50%; //float: right;
-        background: indianred;
+        width: 50%;
+  
+        box-sizing: border-box;
     }
     h1 {
         font-size: 30px;
@@ -343,6 +349,7 @@ footer {
     border-top: solid 5px $amarillo;
     padding: 0 $margen;
     margin-top: 9px;
+    float: inherit;
     div {
         margin: 20px $margen;
         h1 {
@@ -370,7 +377,6 @@ footer {
                 color: $amarillo;
             }
         }
-        
         input {
             text-align: center;
             width: 200px;
@@ -393,16 +399,14 @@ footer {
             height: 35px;
             font-weight: 600;
             margin-left: 10px;
-            background:  rgba(41, 41, 41, .4);
+            background: rgba(41, 41, 41, .4);
             border-color: $colorFondo;
             color: $colorFondo;
         }
-        button:hover{
+        button:hover {
             color: $amarillo;
             border-color: $amarillo;
-
-            background:  rgba(41, 41, 41, .9);
-
+            background: rgba(41, 41, 41, .9);
         }
     }
     .infoo {

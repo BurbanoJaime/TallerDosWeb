@@ -108,6 +108,7 @@ header .logo img {
 .contenedor .izq {
   position: fixed;
   margin-top: 119px;
+  height: 90vh;
 }
 
 .contenedor .izq .mapaSitio {
@@ -217,7 +218,7 @@ header .logo img {
 
 .contenedor .productos {
   margin-left: 360px;
-  margin-top: 119px;
+  margin-top: 110px;
 }
 
 .contenedor .productos article {
@@ -278,13 +279,13 @@ header .logo img {
 
 .producto_detallado {
   margin-top: 110px;
-  margin-left: 3%;
-  margin-right: 3%;
+  padding-left: 0 3%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .producto_detallado .imagenes {
   width: 50%;
-  height: 50vh;
   text-align: center;
 }
 
@@ -296,9 +297,8 @@ header .logo img {
 }
 
 .producto_detallado .imagenes .img_principal div {
-  width: 80vh;
+  width: 85vh;
   height: 50vh;
-  background: black;
   border: 2px solid #fab400;
 }
 
@@ -312,9 +312,10 @@ header .logo img {
 .producto_detallado .imagenes .imgs_secundarias div {
   width: 15vh;
   height: 15vh;
-  background-color: black;
+  background-size: cover;
   border: 2px solid white;
   transition: all .2s;
+  border: 2px solid #afafaf;
 }
 
 .producto_detallado .imagenes .imgs_secundarias div:hover {
@@ -327,6 +328,7 @@ header .logo img {
 
 .producto_detallado .imagenes .imgs_secundarias:last-child div:last-child {
   background: transparent;
+  border: 2px solid transparent;
 }
 
 .producto_detallado .imagenes .imgs_secundarias:last-child div:last-child:hover {
@@ -335,7 +337,7 @@ header .logo img {
 
 .producto_detallado .info_prod {
   width: 50%;
-  background: indianred;
+  box-sizing: border-box;
 }
 
 .producto_detallado h1 {
@@ -362,6 +364,7 @@ footer {
   border-top: solid 5px #fab400;
   padding: 0 3%;
   margin-top: 9px;
+  float: inherit;
 }
 
 footer div {

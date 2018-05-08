@@ -13,13 +13,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
         crossorigin="anonymous">
-    
-        <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet">
-                <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 
 
     <!-- Titulo -->
-    <title>Prex |  </title>
+    <title>Prex | </title>
 
 </head>
 
@@ -113,35 +113,33 @@
         </nav>
     </header>
 
-    <section class="producto_detallado">
-        <section class="imagenes">
+    <section class="flex-basic-cont producto_detallado">
+        <section class="flex-basic-hijo imagenes">
             <article class="img_principal">
-                <div></div>
+                <div style="background-Image:url('{{carro.imaUno}}')!important;"></div>
             </article>
             <article class="flex-ext-cont imgs_secundarias">
-                <div class="uno"></div>
-                <div class="dos"></div>
-                <div class="tres"></div>
-                <div class="cuatro"></div>
+                <div class="uno" style="background-image:url('{{carro.imaUno}}')!important;"></div>
+                <div class="dos" style="background-image:url('{{carro.imaDos}}')!important;"></div>
+                <div class="tres" style="background-image:url('{{carro.imaTres}}')!important;"></div>
+                <div class="cuatro" style="background-image:url('{{carro.imaCuatro}}')!important;"></div>
+                            <div class="cinco" style="background-Image:url('{{carro.imaCinco}}')!important;"></div>
+
             </article>
-            <article class="flex-ext-cont imgs_secundarias">
-                <div class="cinco"></div>
-                <div class="seis"></div>
-                <div class="siete"></div>
+            <article class="flex-basic-cont imgs_secundarias">
+                <div class="seis" style="background-Image:url('{{carro.imaSeis}}')!important;"></div>
+                <div class="siete" style="background-Image:url('{{carro.imaSiete}}')!important;"></div>
                 <div class="ocho"></div>
             </article>
         </section>
-        <section class="info_prod">
+        <section class="flex-basic-hijo info_prod">
+
             <article>
                 <div>
-                    <h1>Mazda 6</h1>
+                    <h1>{{carro.marca}} {{carro.modelo}}</h1>
                 </div>
                 <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos minima eveniet aspernatur unde,
-                        sequi laborum explicabo numquam tempore incidunt sit aut beatae quisquam commodi, quae vel at rem
-                        nostrum nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur deleniti magni,
-                        repellendus laborum magnam corrupti natus sapiente officiis architecto esse, quis accusamus sit necessitatibus
-                        obcaecati cumque corporis aliquid porro vel!</p>
+                    <p>{{carro.descripcion}}</p>
                 </div>
 
             </article>
@@ -156,45 +154,48 @@
 
                 <div>
                     <p>
-                        <b>Color: </b>Rojo</p>
+                        <b>Color: </b>{{carro.color}}</p>
                     <p>
-                        <b>Placa: </b>ABG538</p>
+                        <b>Placa: </b>{{carro.placa}}</p>
                     <p>
-                        <b>Vidrios: </b>Eléctricos</p>
+                        <b>Vidrios: </b>{{carro.vidrios}}</p>
                     <p>
-                        <b>Sonido: </b>CD-MP3/Receptor de AM-FM/Aux/USB con función iPod®/Control desde el volante de dirección
-                        con parlantes 11 BOSÉ</p>
+                        <b>Sonido: </b>{{carro.sonido}}</p>
 
                 </div>
                 <div>
                     <p>
-                        <b>Año: </b>2017</p>
+                        <b>Año: </b>{{carro.ano}}</p>
                     <p>
-                        <b>Transmisión: </b>Mecánica</p>
+                        <b>Transmisión: </b>{{carro.transmicion}}</p>
                     <p>
-                        <b>Retrovisores: </b>Eléctricos</p>
+                        <b>Retrovisores: </b>{{carro.esp_laterales}}</p>
                     <p>
-                        <b>Asientos: </b>Cuero Negro</p>
+                        <b>Asientos: </b>{{carro.asientos}}</p>
 
                 </div>
                 <div>
                     <p>
-                        <b>Combustible: </b>Gasolina</p>
+                        <b>Combustible: </b>{{carro.combustible}}</p>
                     <p>
-                        <b>Dirección: </b>Asistidad Eléctricamente</p>
+                        <b>Dirección: </b>{{carro.direccion}}</p>
                     <p>
-                        <b>Aire Acondicionado: </b>Automatico</p>
+                        <b>Aire Acondicionado: </b>{{carro.aireAcondicionado}}</p>
                     <p>
-                        <b>Frenos ABS: </b>
+                        <b>Frenos ABS: </b> {{carro.frenosABS}}
                     </p>
+                </div>
 
+                <div>
+                    <p>
+                        <b>Airbag: </b>{{carro.airBag}}</p>
+                   
                 </div>
             </article>
         </section>
-        
     </section>
 
-    
+
     <footer class="flex-basic-cont">
         <div class="infoo">
             <h1>SOBRE PREX</h1>
@@ -215,7 +216,7 @@
             </p>
         </div>
 
-        <div >
+        <div>
             <h1>SERVICIOS</h1>
             <p>
                 <a href="#">Transporte</a>
@@ -237,27 +238,27 @@
             </p>
         </div>
 
-        <div >
+        <div>
             <h1>REDES SOCIALES</h1>
             <div class="logos flex-ext-cont">
-                
-                    <a 
-                        <i class="fab fa-instagram"></i>
-                    </a>
-              
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-               
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                
+
+                <a <i class="fab fa-instagram">
+                    </i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
             </div>
         </div>
 
         <div>
-                        <h1>SUSCRIBETE</h1>
+            <h1>SUSCRIBETE</h1>
 
             <div class="suscribete flex-ext-cont">
                 <input type="text" placeholder="prex@prex.com">

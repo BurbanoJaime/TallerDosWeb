@@ -44,20 +44,38 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
     })
 });
 
-app.get('/producto/:id', (req, res) => {
-    db.collection('carros').find({ modelo: req.params.id }).toArray((err, result) => {
-        res.render('det_prod',{
-            carros:result
+/*app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
+    db.collection('carros').find({
+        _id: req.params.id
+    }).toArray((err, result) => {
+        console.log(result);
+        res.render('det_prod', {
+            carro: result[0]
+
         });
     })
+});*/
+
+
+app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
+
+
+    var prod = db.collection('carros')
+        .find({
+            _id: new ObjectID(req.params.id)
+        })
+        .toArray((err, result) => {
+            console.log(result[0]);
+            res.render('det_prod', {
+                carro: result[0]
+
+            });
+        });
+
 });
 
-//Dirección de visualización de cada producto en forma detallada
-/*app.get('/transporte/Alquiler_Vehiculos/+_id', (req, res) => {
-    db.collection('carros').find({ id: req.params.id }).toArray((err, result) => res.render( 'det_prod', {
-        id:result
-    }))
-})*/
+
+
 
 app.get('/prod', (req, res) => {
     res.render('det_prod');
