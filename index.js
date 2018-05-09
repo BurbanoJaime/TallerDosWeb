@@ -30,13 +30,23 @@ app.get('/index', (req, res) => {
     res.render('index');
 });
 
-
 // Dirección de visualización de productos de Alquiler de Vehículos
 app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
 
-    var carroCollection = db.collection('carros').find();
+    var carrosCollection = db.collection('carros').find();
+    if (req.query.precio)
+        carrosCollection.filter({
+            precio: req.query.precio
+        });
 
-    carroCollection.toArray((err, result) => {
+    //Filtro de color
+    if (req.query.color)
+        carrosCollection.filter({
+            color: req.query.color
+        });
+
+        
+    carrosCollection.toArray((err, result) => {
 
         res.render('transporte_Carros', {
             carros: result
@@ -44,7 +54,7 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
     })
 });
 
-
+//Dirección de visualización de cada producto
 app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
 
 
@@ -53,7 +63,7 @@ app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
             _id: new ObjectID(req.params.id)
         })
         .toArray((err, result) => {
-           // console.log(result[0]);
+            // console.log(result[0]);
             res.render('det_prod', {
                 carro: result[0]
 
@@ -63,30 +73,12 @@ app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
 });
 
 
+app.get("/checkout", (req, res) => {
+    res.render('checkout');
+})
+
+
+
+
+
 /* FILTROS */
-// Filtro de precio
-app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
-    /*db.collection('productos')
-        .find()
-        .toArray((err, result) => {
-            res.render('index', {
-                productos: result
-            });
-        })*/
-
-    var prod = db.collection('carros')
-        .find();
-    
-    if(req.query.precio)
-        prod.filter({ precio: req.query.precio });
-
-        if(req.query.color)
-        prod.filter({ marca: req.query.color });
-
-    prod.toArray((err, result) => {
-            console.log('hola servidor')
-            res.render('det_prod', {
-                productos: result
-            });
-        })
-});

@@ -91,12 +91,18 @@ header {
 
 .user {
     margin-right: $margen;
-    color: $gris;
+    div {
+        opacity: .4;
+        transition: all .2s;
+        a {
+            color: $negro;
+        }
+    }
     div:nth-child(2) {
         margin: 0 25px;
     }
     div:hover {
-        color: $negro;
+        opacity: 1;
     }
 }
 
@@ -453,6 +459,7 @@ header {
             height: 20vh;
             padding: 0 60px;
             box-sizing: border-box;
+            margin-top: 2vh;
             div {
                 width: 15vh;
                 height: 15vh;
@@ -526,8 +533,8 @@ header {
                     }
                 }
             }
-            .sonido{
-                div{
+            .sonido {
+                div {
                     padding-right: 50px;
                 }
             }
@@ -583,7 +590,7 @@ header {
 footer {
     background: $negro;
     border-top: solid 5px $amarillo;
-    margin-top: 9px;
+    margin-top: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -674,4 +681,43 @@ footer {
     justify-content: flex-start;
     align-content: center;
     align-items: flex-start;
+}
+
+/* ERROR */
+
+.error {
+    margin: 0 $margen;
+    margin-left:33vw;
+    margin-right: 30vw;
+    article {
+        margin-top: 110px;
+        
+        div {
+            margin: 23vh 0;
+            
+            i {
+                font-size: 100px;
+                color: $amarillo;
+                margin-right: 40px;
+            }
+            h1 {
+                color: $amarillo;
+                font-family: $signikia;
+                font-weight: 600;
+                font-size: 25px;
+                
+            }
+            p {
+                color: $gris;
+            }
+
+            a{
+                color: $gris;
+                text-decoration: underline;
+            }
+            a:hover{
+                color: $negro;
+            }
+        }
+    }
 }

@@ -14,12 +14,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
         crossorigin="anonymous">
 
-    <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-
-
     <!-- Titulo -->
-    <title>Prex | {{carro.marca}} {{carro.modelo}} </title>
+    <title>Prex | Checkout</title>
 
 </head>
 
@@ -115,151 +111,35 @@
         </nav>
     </header>
 
-    <section class="flex-basic-cont inicio">
+
+    <section class="inicio">
         <article class="mapa_det-prod">
             <p class="mapaSitio">
                 <a href="/index">PREX </a> /
-                <a href="">TRANSPORTE </a>/
-                <a href="/transporte/Alquiler_Vehiculos">ALQUILER DE VEHÍCULOS</a>/
-                <a href="/transporte/Alquiler_Vehiculos/{{_id}}" style="text-transform:uppercase">{{carro.marca}} {{carro.modelo}}</a>
-            </p>
-        </article>
-        <article class="titulo">
-            <div>
-                <h1>{{carro.marca}} {{carro.modelo}}</h1>
-                <h2> Costo diario:
-                    <b>{{carro.precio}} COP</b>
-                </h2>
-            </div>
+                <a href="/checkout">CHECK OUT </a>
+                </p>
         </article>
     </section>
 
-    <section class="flex-basic-cont producto_detallado">
-
-        <section class="flex-basic-hijo imagenes">
-            <article class="img_principal">
-                <div style="background-image:url('{{carro.imaUno}}');"></div>
-            </article>
-            <article class="flex-ext-cont imgs_secundarias">
-                <div class="uno" style="background-image:url('{{carro.imaUno}}');"></div>
-                <div class="dos" style="background-image:url('{{carro.imaDos}}');"></div>
-                <div class="tres" style="background-image:url('{{carro.imaTres}}');"></div>
-                <div class="cuatro" style="background-image:url('{{carro.imaCuatro}}');"></div>
-                <div class="cinco" style="background-Image:url('{{carro.imaCinco}}');"></div>
-
-            </article>
-
-        </section>
-        <section class="flex-basic-hijo info_prod">
-
-            <article>
-                <div class="titulo">
-                    <h1>Caracteristicas Principales</h1>
-                </div>
-                <div class="descripcion">
-                    <p>{{carro.descripcion}}</p>
-                </div>
-
-            </article>
-
-            <article>
-                <div class="basica">
-                    <h2>Información Básica</h2>
-                </div>
-
-            </article>
-            <article class="info">
-
-                <div class="flex-ext-cont">
-                    <div>
-                        <h4>Color</h4>
-                        <p>{{carro.color}}</p>
-                    </div>
-
-                    <div>
-                        <h4>Placa</h4>
-                        <p>{{carro.placa}}</p>
-                    </div>
-                    <div>
-                        <h4>Vidrios</h4>
-                        <p>{{carro.vidrios}}</p>
-                    </div>
-                    <div>
-                        <h4>Año </h4>
-                        <p>{{carro.ano}}</p>
-
-                    </div>
-                </div>
-                <div class="flex-ext-cont">
-                    <div>
-                        <h4>
-                            Transmisión</h4>
-                        <p>{{carro.transmicion}}</p>
-                    </div>
-                    <div>
-                        <h4>
-                            Retrovisores </h4>
-                        <p>{{carro.espe_laterales}}</p>
-                    </div>
-                    <div>
-                        <h4>
-                            Asientos</h4>
-                        <p>{{carro.asientos}}</p>
-                    </div>
-                    <div>
-                        <h4>
-                            Combustible </h4>
-                        <p>{{carro.combustible}}</p>
-                    </div>
-                </div>
-
-                <div class="flex-ext-cont">
-                    <div>
-                        <h4>Dirección</h4>
-                        <p>{{carro.direccion}}</p>
-                    </div>
-                    <div>
-                        <h4>Aire Acondicionado </h4>
-                        <p>{{carro.aireAcondicionado}}</p>
-                    </div>
-                    <div>
-                        <h4>Frenos ABS </h4>
-                        <p>{{carro.frenosABS}}</p>
-                    </div>
-                    <div>
-                        <h4>Airbag</h4>
-                        <p>{{carro.airBag}}</p>
-
-                    </div>
-                </div>
-
-                <div class="flex-ext-cont sonido">
-                    <div>
-                        <h4>Sonido</h4>
-                        <p>{{carro.sonido}}</p>
-                    </div>
-
-                    <div>
-                        <h4>Precio por día</h4>
-                        <p> ${{carro.precio}} COP</p>
-                    </div>
-                </div>
 
 
-                <article class="flex-ext-cont descargas">
-                    <div>
-                        <a href='{{carro.fichatec}}' download="Ficha Técnica - {{carro.marca}}{{carro.modelo}}">Descargar ficha técnica</a>
-                    </div>
-                    <div>
-                        <a href=""> Agregar a la lista de alquiler</a>
-                    </div>
-                </article>
-            </article>
-        </section>
+    <section>
+        <table>
+            <tr>
+                <td>a</td>
+                <td>ads</td>
+                <td>ads</td>
+                <td>asd</td>
+                <td>asds</td>
+            </tr>
+        </table>
     </section>
 
 
-    <footer>
+
+
+
+    <footer class="">
         <div class="infoo">
             <h1>SOBRE PREX</h1>
             <p>
@@ -330,28 +210,6 @@
         </div>
 
     </footer>
-
-    <script>
-        var imgUno = '{{carro.imaUno}}';
-
-
-
-        var principal = document.querySelector(".img_principal div");
-
-        var ima_secun = document.querySelectorAll(".producto_detallado .imagenes .imgs_secundarias div").forEach(
-            function (ima) {
-
-                imagen = ima.style.backgroundImage;
-                console.log(imagen);
-                console.log(principal);
-                ima.addEventListener("click", function (imagen) {
-                    principal.style.backgroundImage = imagen;
-                    console.log("Cambio")
-
-                });
-
-            });
-    </script>
 
 </body>
 

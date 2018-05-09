@@ -79,7 +79,15 @@ header .logo img {
 
 .user {
   margin-right: 3%;
-  color: #afafaf;
+}
+
+.user div {
+  opacity: .4;
+  transition: all .2s;
+}
+
+.user div a {
+  color: #474747;
 }
 
 .user div:nth-child(2) {
@@ -87,7 +95,7 @@ header .logo img {
 }
 
 .user div:hover {
-  color: #474747;
+  opacity: 1;
 }
 
 .banner {
@@ -487,6 +495,7 @@ header .logo img {
   height: 20vh;
   padding: 0 60px;
   box-sizing: border-box;
+  margin-top: 2vh;
 }
 
 .producto_detallado .imagenes .imgs_secundarias div {
@@ -622,7 +631,7 @@ header .logo img {
 footer {
   background: #474747;
   border-top: solid 5px #fab400;
-  margin-top: 9px;
+  margin-top: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -724,5 +733,46 @@ footer .infoo {
   justify-content: flex-start;
   align-content: center;
   align-items: flex-start;
+}
+
+/* ERROR */
+.error {
+  margin: 0 3%;
+  margin-left: 33vw;
+  margin-right: 30vw;
+}
+
+.error article {
+  margin-top: 110px;
+}
+
+.error article div {
+  margin: 23vh 0;
+}
+
+.error article div i {
+  font-size: 100px;
+  color: #fab400;
+  margin-right: 40px;
+}
+
+.error article div h1 {
+  color: #fab400;
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.error article div p {
+  color: #afafaf;
+}
+
+.error article div a {
+  color: #afafaf;
+  text-decoration: underline;
+}
+
+.error article div a:hover {
+  color: #474747;
 }
 /*# sourceMappingURL=estilos.css.map */
