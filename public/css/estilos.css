@@ -399,8 +399,65 @@ header .logo img {
   border: 2px solid #afafaf;
 }
 
-.producto_detallado {
+.inicio {
   margin-top: 110px;
+  box-sizing: border-box;
+}
+
+.inicio .mapa_det-prod {
+  width: 30%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0 3%;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.inicio .mapa_det-prod a {
+  color: #afafaf;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.inicio .mapa_det-prod a:last-child {
+  color: #474747;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.inicio .mapa_det-prod a:hover {
+  text-decoration: underline;
+}
+
+.inicio .mapa_det-prod a:last-child:hover {
+  color: #fab400;
+}
+
+.inicio .titulo {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.inicio .titulo div {
+  padding-right: 47%;
+}
+
+.inicio .titulo div h1 {
+  font-size: 35px;
+  color: #fab400;
+  text-align: center;
+}
+
+.inicio .titulo div h2 {
+  font-size: 15px;
+  color: #474747;
+  font-weight: 400;
+  text-align: center;
+}
+
+.producto_detallado {
   padding-left: 0 3%;
   box-sizing: border-box;
   width: 100%;
@@ -461,6 +518,86 @@ header .logo img {
 .producto_detallado .info_prod {
   width: 50%;
   box-sizing: border-box;
+  padding-right: 3%;
+}
+
+.producto_detallado .info_prod article .titulo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.producto_detallado .info_prod article .titulo h1 {
+  border-bottom: solid 3px #fab400;
+}
+
+.producto_detallado .info_prod article .descripcion {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: #474747;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.producto_detallado .info_prod article .basica h2 {
+  text-align: center;
+  border-bottom: solid 3px #fab400;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.producto_detallado .info_prod .info div {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.producto_detallado .info_prod .info div div h4 {
+  color: #fab400;
+  text-align: left;
+}
+
+.producto_detallado .info_prod .info div div p {
+  color: #474747;
+  text-align: justify;
+}
+
+.producto_detallado .info_prod .info .sonido div {
+  padding-right: 50px;
+}
+
+.producto_detallado .info_prod .info .descargas div {
+  background: #474747;
+  padding: 10px 0;
+  box-sizing: border-box;
+  transition: all .2s;
+  text-decoration: none;
+  width: 30%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.producto_detallado .info_prod .info .descargas div a {
+  color: #eaeaea;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.producto_detallado .info_prod .info .descargas div:first-child {
+  margin-left: 17%;
+}
+
+.producto_detallado .info_prod .info .descargas div:last-child {
+  margin-right: 17%;
+}
+
+.producto_detallado .info_prod .info .descargas div:hover {
+  background: #fab400;
+}
+
+.producto_detallado .info_prod .info .descargas div:hover a {
+  color: #eaeaea;
 }
 
 .producto_detallado h1 {
@@ -485,9 +622,11 @@ header .logo img {
 footer {
   background: #474747;
   border-top: solid 5px #fab400;
-  padding: 0 3%;
   margin-top: 9px;
-  float: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 18%;
 }
 
 footer div {

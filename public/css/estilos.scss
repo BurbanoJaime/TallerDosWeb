@@ -196,17 +196,15 @@ header {
                     font-weight: 600;
                     color: $negro;
                 }
-                .ui-state-default{
+                .ui-state-default {
                     text-align: center;
                 }
-                .ui-datepicker-next{
+                .ui-datepicker-next {
                     background-color: $colorFondo;
                 }
-
-                .ui-datepicker-prev{
+                .ui-datepicker-prev {
                     background-color: $colorFondo;
                 }
-                
             }
             .color {
                 div {
@@ -382,8 +380,56 @@ header {
 }
 
 //Visualización del producto
-.producto_detallado {
+.inicio {
     margin-top: 110px;
+    box-sizing: border-box;
+    .mapa_det-prod {
+        width: 30%;
+        box-sizing: border-box;
+        text-align: left;
+        padding: 0$margen;
+        margin: 10px 0;
+        font-style: italic;
+        a {
+            color: $gris;
+            font-family: $titilium;
+            font-weight: lighter;
+            text-decoration: none;
+        }
+        a:last-child {
+            color: $negro;
+            font-family: $titilium;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:last-child:hover {
+            color: $amarillo;
+        }
+    }
+    .titulo {
+        width: 70%;
+        margin-bottom: 20px;
+        div {
+            padding-right: 47%;
+            h1 {
+                font-size: 35px;
+                color: $amarillo;
+                text-align: center;
+            }
+            h2 {
+                font-size: 15px;
+                color: $negro;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.producto_detallado {
     padding-left: 0 $margen;
     box-sizing: border-box;
     width: 100%;
@@ -435,6 +481,86 @@ header {
     .info_prod {
         width: 50%;
         box-sizing: border-box;
+        padding-right: $margen;
+        article {
+            .titulo {
+                text-align: center;
+                margin-bottom: 10px;
+                h1 {
+                    border-bottom: solid 3px $amarillo;
+                }
+            }
+            .descripcion {
+                font-family: $titilium;
+                font-weight: 400;
+                color: $negro;
+                font-size: 16px;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
+        }
+        article {
+            .basica {
+                h2 {
+                    text-align: center;
+                    border-bottom: solid 3px $amarillo;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .info {
+            div {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 10px;
+                div {
+                    h4 {
+                        color: $amarillo;
+                        text-align: left;
+                    }
+                    p {
+                        color: $negro;
+                        text-align: justify;
+                    }
+                }
+            }
+            .sonido{
+                div{
+                    padding-right: 50px;
+                }
+            }
+            .descargas {
+                div {
+                    background: $negro;
+                    padding: 10px 0;
+                    box-sizing: border-box;
+                    transition: all .2s;
+                    text-decoration: none;
+                    width: 30%;
+                    text-align: center;
+                    margin-top: 10px;
+                    a {
+                        color: $colorFondo;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                }
+                div:first-child {
+                    margin-left: 17%;
+                }
+                div:last-child {
+                    margin-right: 17%;
+                }
+                div:hover {
+                    background: $amarillo;
+                    a {
+                        color: $colorFondo;
+                    }
+                }
+            }
+        }
     }
     h1 {
         font-size: 30px;
@@ -457,9 +583,11 @@ header {
 footer {
     background: $negro;
     border-top: solid 5px $amarillo;
-    padding: 0 $margen;
     margin-top: 9px;
-    float: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 18%;
     div {
         margin: 20px $margen;
         h1 {

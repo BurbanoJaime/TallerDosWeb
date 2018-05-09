@@ -113,7 +113,27 @@
         </nav>
     </header>
 
+    <section class="flex-basic-cont inicio">
+        <article class="mapa_det-prod">
+            <p class="mapaSitio">
+                <a href="/index">PREX </a> /
+                <a href="">TRANSPORTE </a>/
+                <a href="/transporte/Alquiler_Vehiculos">ALQUILER DE VEHÍCULOS</a>/
+                <a href="/transporte/Alquiler_Vehiculos/{{_id}}" style="text-transform:uppercase">{{carro.marca}} {{carro.modelo}}</a>
+            </p>
+        </article>
+        <article class="titulo">
+            <div>
+                <h1>{{carro.marca}} {{carro.modelo}}</h1>
+                <h2> Costo diario:
+                    <b>{{carro.precio}} COP</b>
+                </h2>
+            </div>
+        </article>
+    </section>
+
     <section class="flex-basic-cont producto_detallado">
+
         <section class="flex-basic-hijo imagenes">
             <article class="img_principal">
                 <div style="background-Image:url('{{carro.imaUno}}');"></div>
@@ -126,79 +146,118 @@
                 <div class="cinco" style="background-Image:url('{{carro.imaCinco}}');"></div>
 
             </article>
-            <article class="flex-ext-cont imgs_secundarias">
-                <div class="seis" style="background-Image:url('{{carro.imaSeis}}');"></div>
-                <div class="siete" style="background-Image:url('{{carro.imaSiete}}');"></div>
-                <div class="ocho"></div>
-                <div class="ocho"></div>
-                <div class="ocho"></div>
-            </article>
+
         </section>
         <section class="flex-basic-hijo info_prod">
 
             <article>
-                <div>
-                    <h1>{{carro.marca}} {{carro.modelo}}</h1>
+                <div class="titulo">
+                    <h1>Caracteristicas Principales</h1>
                 </div>
-                <div>
+                <div class="descripcion">
                     <p>{{carro.descripcion}}</p>
                 </div>
 
             </article>
 
             <article>
-                <div>
+                <div class="basica">
                     <h2>Información Básica</h2>
                 </div>
 
             </article>
             <article class="info">
 
-                <div>
-                    <p>
-                        <b>Color: </b>{{carro.color}}</p>
-                    <p>
-                        <b>Placa: </b>{{carro.placa}}</p>
-                    <p>
-                        <b>Vidrios: </b>{{carro.vidrios}}</p>
-                    <p>
-                        <b>Sonido: </b>{{carro.sonido}}</p>
+                <div class="flex-ext-cont">
+                    <div>
+                        <h4>Color</h4>
+                        <p>{{carro.color}}</p>
+                    </div>
 
-                </div>
-                <div>
-                    <p>
-                        <b>Año: </b>{{carro.ano}}</p>
-                    <p>
-                        <b>Transmisión: </b>{{carro.transmicion}}</p>
-                    <p>
-                        <b>Retrovisores: </b>{{carro.esp_laterales}}</p>
-                    <p>
-                        <b>Asientos: </b>{{carro.asientos}}</p>
+                    <div>
+                        <h4>Placa</h4>
+                        <p>{{carro.placa}}</p>
+                    </div>
+                    <div>
+                        <h4>Vidrios</h4>
+                        <p>{{carro.vidrios}}</p>
+                    </div>
+                    <div>
+                        <h4>Año </h4>
+                        <p>{{carro.ano}}</p>
 
+                    </div>
                 </div>
-                <div>
-                    <p>
-                        <b>Combustible: </b>{{carro.combustible}}</p>
-                    <p>
-                        <b>Dirección: </b>{{carro.direccion}}</p>
-                    <p>
-                        <b>Aire Acondicionado: </b>{{carro.aireAcondicionado}}</p>
-                    <p>
-                        <b>Frenos ABS: </b> {{carro.frenosABS}}
-                    </p>
+                <div class="flex-ext-cont">
+                    <div>
+                        <h4>
+                            Transmisión</h4>
+                        <p>{{carro.transmicion}}</p>
+                    </div>
+                    <div>
+                        <h4>
+                            Retrovisores </h4>
+                        <p>{{carro.espe_laterales}}</p>
+                    </div>
+                    <div>
+                        <h4>
+                            Asientos</h4>
+                        <p>{{carro.asientos}}</p>
+                    </div>
+                    <div>
+                        <h4>
+                            Combustible </h4>
+                        <p>{{carro.combustible}}</p>
+                    </div>
                 </div>
 
-                <div>
-                    <p>
-                        <b>Airbag: </b>{{carro.airBag}}</p>
+                <div class="flex-ext-cont">
+                    <div>
+                        <h4>Dirección</h4>
+                        <p>{{carro.direccion}}</p>
+                    </div>
+                    <div>
+                        <h4>Aire Acondicionado </h4>
+                        <p>{{carro.aireAcondicionado}}</p>
+                    </div>
+                    <div>
+                        <h4>Frenos ABS </h4>
+                        <p>{{carro.frenosABS}}</p>
+                    </div>
+                    <div>
+                        <h4>Airbag</h4>
+                        <p>{{carro.airBag}}</p>
 
+                    </div>
                 </div>
+
+                <div class="flex-ext-cont sonido">
+                    <div>
+                        <h4>Sonido</h4>
+                        <p>{{carro.sonido}}</p>
+                    </div>
+
+                    <div>
+                        <h4>Precio por día</h4>
+                        <p> ${{carro.precio}} COP</p>
+                    </div>
+                </div>
+
+
+                <article class="flex-ext-cont descargas">
+                    <div>
+                        <a href='{{carro.fichatec}}' download="Ficha Técnica - {{carro.marca}}{{carro.modelo}}">Descargar ficha técnica</a>
+                    </div>
+                    <div>
+                        <a href=""> Agregar a la lista de alquiler</a>
+                    </div>
+                </article>
             </article>
         </section>
     </section>
 
 
-    <footer class="flex-basic-cont">
+    <footer>
         <div class="infoo">
             <h1>SOBRE PREX</h1>
             <p>
@@ -273,12 +332,12 @@
 
     <script>
         /*var imgUno = {{carro.imaUno}};
-                        var imgDos = {{carro.imaDos}};
-                        var imgTres = {{carro.imaTres}};
-                        var imgCuatro = {{carro.imaCuatro}};
-                        var imgCinco = {{carro.imaCinco}};
-                        var imgSeis = {{carro.imaSeis}};
-                        var imgSiete = {{carro.imaSiete}};*/
+                                                                                                                                                                                        var imgDos = {{carro.imaDos}};
+                                                                                                                                                                                        var imgTres = {{carro.imaTres}};
+                                                                                                                                                                                        var imgCuatro = {{carro.imaCuatro}};
+                                                                                                                                                                                                    var imgCinco = {{carro.imaCinco}};
+                                                                                                                                                                                        var imgSeis = {{carro.imaSeis}};
+                                                                                                                                                                            var imgSiete = {{carro.imaSiete}};*/
 
         var principal = document.querySelector(".img_principal .div");
 
