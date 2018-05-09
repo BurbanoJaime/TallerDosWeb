@@ -34,10 +34,19 @@ app.get('/index', (req, res) => {
 app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
 
     var carrosCollection = db.collection('carros').find();
-    if (req.query.precio)
+
+    //Filtro por precio
+    if (req.query.min && req.query.max)
         carrosCollection.filter({
-            precio: req.query.precio
+            precio: {
+                $gte: parseInt(req.query.min),
+                $lte: parseInt(req.query.max)
+
+            }
         });
+
+
+
 
     //Filtro de color
     if (req.query.color)
@@ -45,7 +54,7 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
             color: req.query.color
         });
 
-        
+
     carrosCollection.toArray((err, result) => {
 
         res.render('transporte_Carros', {

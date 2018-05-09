@@ -15,7 +15,7 @@
             "asientos": "Cuero Dakota Negro",
             "vidrios": "Eléctricos",
             "espe_laterales": "Eléctricos",
-            "precio": "850.620",
+            "precio": 850620,
 
             "imaUno": "/img/transporte/BMW 7 Sedan/Principal.jpg",
             "imaDos": "/img/transporte/BMW 7 Sedan/Imagen 2.jpg",
@@ -42,7 +42,7 @@
             "asientos": "Cuero Negro",
             "vidrios": "Eléctricos",
             "espe_laterales": "Eléctricos",
-            "precio": "576.523",
+            "precio": 576523,
 
             "imaUno": "/img/transporte/Mazda 6/Imagen 1.jpg",
             "imaDos": "/img/transporte/Mazda 6/Imagen 2.jpg",
@@ -69,7 +69,7 @@
             "asientos": "Cuero Negro",
             "vidrios": "Eléctricos",
             "espe_laterales": "Eléctricos",
-            "precio": "443.250",
+            "precio": 443250,
 
             "imaUno": "/img/transporte/Volkswagen Jetta/Imagen 1.png",
             "imaDos": "/img/transporte/Volkswagen Jetta/Imagen 2.jpg",
@@ -96,7 +96,7 @@
             "asientos": "Cuero Negro",
             "vidrios": "Delantes Eléctricos, Traseros Manuales",
             "espe_laterales": "Eléctricos",
-            "precio": "258.000",
+            "precio": 258000,
 
             "imaUno": "/img/transporte/Renault Logan/Imagen 1.jpg",
             "imaDos": "/img/transporte/Renault Logan/Imagen 2.jpg",

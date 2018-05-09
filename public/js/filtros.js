@@ -9,15 +9,21 @@ $(function () {
 
 $("#datepicker").datepicker().show();
 
+
+var a;
+var b;
+
 /**Filtro de precio */
 /* Valor del rango desde*/
 
 var sliderDesde = document.getElementById("desde");
+
 var outputDesde = document.getElementById("desdeValor");
 outputDesde.innerHTML = sliderDesde.value;
 
 sliderDesde.oninput = function () {
-    outputDesde.innerHTML = this.value;
+    a = this.value;
+    outputDesde.innerHTML = a;
 }
 
 
@@ -27,7 +33,8 @@ var outputHasta = document.getElementById("hastaValor");
 outputHasta.innerHTML = sliderHasta.value;
 
 sliderHasta.oninput = function () { 
-    outputHasta.innerHTML = this.value;
+a = this.value;
+    outputHasta.innerHTML = a;
 }
 
 var boton = document.querySelector(".filtroRango");
