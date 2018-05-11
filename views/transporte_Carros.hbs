@@ -17,7 +17,7 @@
 
     <!-- Estilo del calendario -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link  rel = " stylesheet "  href = " animate.min.css ">
+    <link rel=" stylesheet " href=" animate.min.css ">
 
     <!-- Titulo -->
     <title>Prex | Alquiler de Vehículos </title>
@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="animated infinite fadeIn">
+<body>
     <header>
         <nav class="flex-ext-cont">
             <div class="logo">
@@ -109,119 +109,122 @@
                     <i class="fas fa-user"></i>
                 </div>
                 <div>
-                    <a href="/checkout"><i class="fas fa-truck"></i></a>
+                    <a href="/checkout">
+                        <i class="fas fa-truck"></i>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
 
+    <div id="contenido">
 
-    <section class="contenedor flex-basic-cont">
-        <section class="izq" data-spy="affix" data-offset-top="119">
-            <p class="mapaSitio">
-                <a href="/index">PREX </a> /
-                <a href="">TRANSPORTE </a>/
-                <a href="/transporte/Alquiler_Vehiculos">ALQUILER DE VEHÍCULOS</a>
-            </p>
-            <section class="filtro">
-                <article class=" flex-ext-cont orden">
-                    <p>Ordenar por</p>
+        <section class="contenedor flex-basic-cont">
+            <section class="izq" data-spy="affix" data-offset-top="119">
+                <p class="mapaSitio">
+                    <a href="/index">PREX </a> /
+                    <a href="">TRANSPORTE </a>/
+                    <a href="/transporte/Alquiler_Vehiculos">ALQUILER DE VEHÍCULOS</a>
+                </p>
+                <section class="filtro">
+                    <article class=" flex-ext-cont orden">
+                        <p>Ordenar por</p>
 
-                    <select name="orden">
-                        <option value="1">Precio Ascendente</option>
-                        <option value="2">Precio Descendente</option>
-                        <option value="3">Descuentos</option>
-                    </select>
+                        <select name="orden">
+                            <option value="1">Precio Ascendente</option>
+                            <option value="2">Precio Descendente</option>
+                            <option value="3">Descuentos</option>
+                        </select>
 
-                </article>
+                    </article>
 
-                <article class="calendario">
-                    <h3>Calendario</h3>
-                    <div id="datepicker"></div>
-                </article>
+                    <article class="calendario">
+                        <h3>Calendario</h3>
+                        <div id="datepicker"></div>
+                    </article>
 
-                <article class="rango">
-                    <h3>PRECIO</h3>
-                    <div class=" flex-ext-cont slidecontainer">
-                        <input type="range" min="" max="2500000" value="0" class="slider" id="desde">
-                        <input type="range" min="2500000" max="5000000" value="5000000" class="slider" id="hasta">
-                    </div>
-                    <div class="flex-ext-cont">
-                        <p>Desde:
-                            <span id="desdeValor"></span>
-                        </p>
-                        <p>Hasta:
-                            <span id="hastaValor"></span>
-                        </p>
-                    </div>
+                    <article class="rango">
+                        <h3>PRECIO</h3>
+                        <div class=" flex-ext-cont slidecontainer">
+                            <input type="range" min="" max="2500000" value="0" class="slider" id="desde">
+                            <input type="range" min="2500000" max="5000000" value="5000000" class="slider" id="hasta">
+                        </div>
+                        <div class="flex-ext-cont">
+                            <p>Desde:
+                                <span id="desdeValor"></span>
+                            </p>
+                            <p>Hasta:
+                                <span id="hastaValor"></span>
+                            </p>
+                        </div>
 
-                    <div>
-                        <button class="filtroRango">Buscar</button>
-                    </div>
+                        <div>
+                            <button class="filtroRango">Buscar</button>
+                        </div>
 
 
-                </article>
+                    </article>
 
-                <article class="color">
-                    <h3>Color</h3>
-                    <div class="flex-ext-cont coloruno">
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Rojo"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Violeta"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Amarillo"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Verde"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Azul"></a>
-                    </div>
-                    <div class="flex-ext-cont colordos">
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Negro"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Plata"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Gris"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Beige"></a>
-                        <a href="/transporte/Alquiler_Vehiculos/?color=Blanco"></a>
-                    </div>
-                </article>
+                    <article class="color">
+                        <h3>Color</h3>
+                        <div class="flex-ext-cont coloruno">
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Rojo" title="Rojo"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Violeta" title="Violeta"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Amarillo" title="Amarillo"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Verde" title="Verde"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Azul" title="Azul"></a>
+                        </div>
+                        <div class="flex-ext-cont colordos">
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Negro" title="Negro"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Plata" title="Plata"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Gris" title="Gris"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Beige" title="Beige"></a>
+                            <a href="/transporte/Alquiler_Vehiculos/?color=Blanco" title="Blanco"></a>
+                        </div>
+                    </article>
 
-                <article class="tema">
-                    <h3>Temática</h3>
-                    <select name="tematica" id="tematica">
-                        <option value="0">Ninguno</option>
-                        <option value="1">Fantasía</option>
-                        <option value="2">Acción</option>
-                        <option value="3">Romance</option>
-                        <option value="4">Vaqueros</option>
-                        <option value="5">Comedia</option>
-                    </select>
-                </article>
+                    <article class="tema">
+                        <h3>Temática</h3>
+                        <select name="tematica" id="tematica">
+                            <option value="0">Ninguno</option>
+                            <option value="1">Fantasía</option>
+                            <option value="2">Acción</option>
+                            <option value="3">Romance</option>
+                            <option value="4">Vaqueros</option>
+                            <option value="5">Comedia</option>
+                        </select>
+                    </article>
 
-                <article class="borrar">
-                    <a href="/transporte/Alquiler_Vehiculos">
-                        <div> Borrar Filtros</div>
-                    </a>
-                </article>
+                    <article class="borrar">
+                        <a href="/transporte/Alquiler_Vehiculos">
+                            <div> Borrar Filtros</div>
+                        </a>
+                    </article>
+                </section>
+
             </section>
 
+            <section class="productos flex-basic-cont">
+
+                {{#each carros}}
+                <article>
+                    <a href="/transporte/Alquiler_Vehiculos/{{_id}}">
+                        <div class="img-info">
+                            <img src="{{imaUno}}">
+                        </div>
+                        <h1>{{marca}} {{modelo}}</h1>
+                        <div class="info">
+                            <h2>$ {{precio}} COP</h2>
+                            <p>PRECIO DIARIO POR UNIDAD</p>
+                        </div>
+                    </a>
+                </article>
+                {{/each}}
+            </section>
         </section>
+    </div>
 
-        <section class="productos flex-basic-cont">
-
-            {{#each carros}}
-            <article>
-                <a href="/transporte/Alquiler_Vehiculos/{{_id}}">
-                    <div class="img-info">
-                        <img src="{{imaUno}}">
-                    </div>
-                    <h1>{{marca}} {{modelo}}</h1>
-                    <div class="info">
-                        <h2>$ {{precio}} COP</h2>
-                        <p>PRECIO DIARIO POR UNIDAD</p>
-                    </div>
-                </a>
-            </article>
-            {{/each}}
-        </section>
-
-
-    </section>
-     <footer class="">
+    <footer class="">
         <div class="infoo">
             <h1>SOBRE PREX</h1>
             <p>

@@ -8,6 +8,14 @@
   text-decoration: none;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: calc(100% - 190px) !important;
+}
+
 header {
   background-color: #eaeaea;
   box-shadow: 0px 7px 17px -2px rgba(0, 0, 0, 0.25);
@@ -106,7 +114,11 @@ header .logo img {
   background-size: cover;
   background-position-y: -220px;
   box-shadow: inset 0px 7px 45px 0px rgba(0, 0, 0, 0.5);
-  margin-top: 3%;
+  margin-top: 80px;
+}
+
+#contenido {
+  min-height: calc(100% - 247px) !important;
 }
 
 .contenedor {
@@ -114,7 +126,6 @@ header .logo img {
 }
 
 .contenedor .izq {
-  position: fixed;
   margin-top: 119px;
   height: 90vh;
 }
@@ -348,8 +359,9 @@ header .logo img {
 }
 
 .contenedor .productos {
-  margin-left: 360px;
+  margin-left: 20px;
   margin-top: 110px;
+  float: left;
 }
 
 .contenedor .productos article {
@@ -637,6 +649,7 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 18%;
+  height: 225px;
 }
 
 footer div {
@@ -712,30 +725,6 @@ footer .infoo {
   margin-left: 0;
 }
 
-.flex-ext-cont {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  align-items: center;
-}
-
-.flex-ext-hijo {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: auto;
-}
-
-.flex-basic-cont {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: flex-start;
-}
-
 /* ERROR */
 .error {
   margin: 0 3%;
@@ -775,5 +764,85 @@ footer .infoo {
 
 .error article div a:hover {
   color: #474747;
+}
+
+/* Chech Out */
+.checkout {
+  margin: 0 3%;
+}
+
+.checkout table {
+  width: 100%;
+}
+
+.checkout table tr:first-child th {
+  background-color: #ebebeb;
+}
+
+.checkout table tr:first-child th:last-child {
+  background: #fff;
+}
+
+.checkout table tr th {
+  color: #474747;
+  padding: 10px 0;
+}
+
+.checkout table tr th:last-child {
+  width: 5%;
+}
+
+.checkout table tr td {
+  border: solid 1px #afafaf;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.checkout table tr td .fas {
+  color: red;
+  font-size: 18px;
+}
+
+.checkout table tr td:last-child {
+  border: none;
+}
+
+.checkout table .total th {
+  color: #474747;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.checkout table .total th:nth-child(2) {
+  color: #fab400;
+}
+
+.checkout table .total th:nth-child(3) {
+  color: #474747;
+  background: #fab400;
+}
+
+.flex-ext-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.flex-ext-hijo {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-basic-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: flex-start;
 }
 /*# sourceMappingURL=estilos.css.map */

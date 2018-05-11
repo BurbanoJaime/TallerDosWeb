@@ -20,6 +20,13 @@ sans-serif;
     text-decoration: none;
 }
 
+html{
+    height: 100%;
+}
+body{
+    height: calc(100% - 190px) !important;
+}
+
 header {
     //Color de fondo del header
     background-color: $colorFondo; //Sombra
@@ -116,14 +123,17 @@ header {
     background-size: cover;
     background-position-y: -220px;
     box-shadow: inset 0px 7px 45px 0px rgba(0, 0, 0, 0.5);
-    margin-top: $margen;
+    margin-top: 80px;
+}
+
+#contenido{
+    min-height: calc(100% - 247px) !important;
 }
 
 //Informacion de la pagina de visualización de productos de carros
 .contenedor {
     margin: 0 $margen;
     .izq {
-        position: fixed;
         margin-top: 119px;
         height: 90vh;
         .mapaSitio {
@@ -223,7 +233,6 @@ header {
                         border: solid 2px $amarillo;
                     }
                 }
-
                 .coloruno {
                     a:nth-child(1) {
                         background-color: #ad1010;
@@ -244,7 +253,7 @@ header {
                 .colordos {
                     margin-top: 20px;
                     a:nth-child(1) {
-                        background-color:#0e0e0e;
+                        background-color: #0e0e0e;
                     }
                     a:nth-child(2) {
                         background-color: #f0f0f0;
@@ -257,7 +266,8 @@ header {
                     }
                     a:nth-child(5) {
                         background-color: #FFF;
-                        border: solid 2px $gris;                    }
+                        border: solid 2px $gris;
+                    }
                 }
             }
             .tema {
@@ -331,8 +341,9 @@ header {
         }
     } //Visualizacion de productos
     .productos {
-        margin-left: 360px;
+        margin-left: 20px;
         margin-top: 110px;
+        float: left;
         article {
             width: 260px;
             background: #fafafa;
@@ -596,6 +607,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0 18%;
+    height: 225px;
     div {
         margin: 20px $margen;
         h1 {
@@ -660,6 +672,95 @@ footer {
     }
 }
 
+/* ERROR */
+
+.error {
+    margin: 0 $margen;
+    margin-left: 33vw;
+    margin-right: 30vw;
+    article {
+        margin-top: 110px;
+        div {
+            margin: 23vh 0;
+            i {
+                font-size: 100px;
+                color: $amarillo;
+                margin-right: 40px;
+            }
+            h1 {
+                color: $amarillo;
+                font-family: $signikia;
+                font-weight: 600;
+                font-size: 25px;
+            }
+            p {
+                color: $gris;
+            }
+            a {
+                color: $gris;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: $negro;
+            }
+        }
+    }
+}
+
+/* Chech Out */
+
+.checkout {
+    margin: 0 $margen;
+    table {
+        width: 100%;
+        tr:first-child {
+            th {
+                background-color: #ebebeb;
+            }
+            th:last-child {
+                background: #fff;
+            }
+        }
+
+        tr {
+            th {
+                color: $negro;
+                padding: 10px 0;
+            }
+            th:last-child {
+                width: 5%;
+            }
+            td {
+                border: solid 1px $gris;
+                text-align: center;
+                padding: 10px 0;
+                .fas {
+                    color: red;
+                    font-size: 18px;
+                }
+            }
+            td:last-child {
+                border: none;
+            }
+        }
+        .total {
+            th {
+                color: $negro;
+                font-weight: bold;
+                font-size: 20px;
+
+            }
+            th:nth-child(2){
+                color: $amarillo;
+            }
+            th:nth-child(3) {
+                color: $negro;
+                background: $amarillo;
+            }
+        }
+    }
+}
+
 .flex-ext-cont {
     display: flex;
     flex-direction: row;
@@ -682,43 +783,4 @@ footer {
     justify-content: flex-start;
     align-content: center;
     align-items: flex-start;
-}
-
-/* ERROR */
-
-.error {
-    margin: 0 $margen;
-    margin-left:33vw;
-    margin-right: 30vw;
-    article {
-        margin-top: 110px;
-        
-        div {
-            margin: 23vh 0;
-            
-            i {
-                font-size: 100px;
-                color: $amarillo;
-                margin-right: 40px;
-            }
-            h1 {
-                color: $amarillo;
-                font-family: $signikia;
-                font-weight: 600;
-                font-size: 25px;
-                
-            }
-            p {
-                color: $gris;
-            }
-
-            a{
-                color: $gris;
-                text-decoration: underline;
-            }
-            a:hover{
-                color: $negro;
-            }
-        }
-    }
 }

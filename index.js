@@ -45,6 +45,9 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
             }
         });
 
+
+
+
     //Filtro de color
     if (req.query.color)
         carrosCollection.filter({
@@ -81,4 +84,8 @@ app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
 
 app.get("/checkout", (req, res) => {
     res.render('checkout');
+});
+
+app.get("/error", (req, res) => {
+    res.render('error');
 });
