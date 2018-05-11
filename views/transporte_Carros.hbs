@@ -17,6 +17,7 @@
 
     <!-- Estilo del calendario -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link  rel = " stylesheet "  href = " animate.min.css ">
 
     <!-- Titulo -->
     <title>Prex | Alquiler de Vehículos </title>
@@ -24,7 +25,7 @@
 
 </head>
 
-<body>
+<body class="animated infinite fadeIn">
     <header>
         <nav class="flex-ext-cont">
             <div class="logo">
@@ -142,8 +143,8 @@
                 <article class="rango">
                     <h3>PRECIO</h3>
                     <div class=" flex-ext-cont slidecontainer">
-                        <input type="range" min="0" max="500000" value="0" class="slider" id="desde">
-                        <input type="range" min="0" max="500000" value="500000" class="slider" id="hasta">
+                        <input type="range" min="" max="2500000" value="0" class="slider" id="desde">
+                        <input type="range" min="2500000" max="5000000" value="5000000" class="slider" id="hasta">
                     </div>
                     <div class="flex-ext-cont">
                         <p>Desde:
@@ -165,17 +166,17 @@
                     <h3>Color</h3>
                     <div class="flex-ext-cont coloruno">
                         <a href="/transporte/Alquiler_Vehiculos/?color=Rojo"></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Violeta"></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Amarillo"></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Verde"></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Azul"></a>
                     </div>
                     <div class="flex-ext-cont colordos">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Negro"></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Plata"></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Gris"></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Beige"></a>
+                        <a href="/transporte/Alquiler_Vehiculos/?color=Blanco"></a>
                     </div>
                 </article>
 
@@ -205,7 +206,6 @@
             {{#each carros}}
             <article>
                 <a href="/transporte/Alquiler_Vehiculos/{{_id}}">
-
                     <div class="img-info">
                         <img src="{{imaUno}}">
                     </div>

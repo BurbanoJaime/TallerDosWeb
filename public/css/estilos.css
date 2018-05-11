@@ -152,7 +152,7 @@ header .logo img {
 .contenedor .izq .filtro {
   width: 350px;
   border: 2px solid #afafaf;
-  margin-top: 18px;
+  margin-top: 5px;
   padding: 15px;
   box-sizing: border-box;
   background: #FFF;
@@ -165,7 +165,7 @@ header .logo img {
   text-align: center;
   font-size: 15px;
   transition: all .2s;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .contenedor .izq .filtro .orden select {
@@ -232,7 +232,7 @@ header .logo img {
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(1) {
-  background-color: red;
+  background-color: #ad1010;
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(2) {
@@ -244,11 +244,11 @@ header .logo img {
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(4) {
-  background-color: #474747;
+  background-color: #085521;
 }
 
 .contenedor .izq .filtro .color .coloruno a:nth-child(5) {
-  background-color: rgba(255, 255, 255, 0.726);
+  background-color: #123d8b;
 }
 
 .contenedor .izq .filtro .color .colordos {
@@ -256,23 +256,24 @@ header .logo img {
 }
 
 .contenedor .izq .filtro .color .colordos a:nth-child(1) {
-  background-color: red;
+  background-color: #0e0e0e;
 }
 
 .contenedor .izq .filtro .color .colordos a:nth-child(2) {
-  background-color: red;
+  background-color: #f0f0f0;
 }
 
 .contenedor .izq .filtro .color .colordos a:nth-child(3) {
-  background-color: red;
+  background-color: #afafaf;
 }
 
 .contenedor .izq .filtro .color .colordos a:nth-child(4) {
-  background-color: red;
+  background-color: #ccc7b1;
 }
 
 .contenedor .izq .filtro .color .colordos a:nth-child(5) {
-  background-color: red;
+  background-color: #FFF;
+  border: solid 2px #afafaf;
 }
 
 .contenedor .izq .filtro .tema {
