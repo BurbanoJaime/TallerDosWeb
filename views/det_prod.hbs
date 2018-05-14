@@ -109,7 +109,7 @@
                 </div>
                 <div>
                     <a href="/checkout">
-                        <i class="fas fa-truck"></i>
+                        <i class="fas fa-truck"></i><span class="carrito">0</span>
                     </a>
                 </div>
             </div>
@@ -253,7 +253,7 @@
                         <a href='{{carro.fichatec}}' download="Ficha Técnica - {{carro.marca}}{{carro.modelo}}">Descargar ficha técnica</a>
                     </div>
                     <div>
-                        <a href=""> Agregar a la lista de alquiler</a>
+                        <button class="agregar"> Agregar a la lista de alquiler</button>
                     </div>
                 </article>
             </article>
@@ -356,6 +356,8 @@
 
             });
     </script>
+    <script src="/js/cliente.js"></script>
+    <script src="/js/DB_Checkout.js"></script>
 
 </body>
 

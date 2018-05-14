@@ -21,7 +21,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     db = client.db('TallerDos');
 
     // Iniciar servidor
-    app.listen(5000);
+    app.listen(5000 );
 });
 
 
