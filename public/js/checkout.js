@@ -10,7 +10,7 @@ fetch('http://localhost:5000/productosPorIds?id=' + arreglo)
         var lista = document.querySelector('.lista');
         res.forEach(function (elem) {
             lista.innerHTML += `<tr>
-            <td>` + elem.marca + elem.modelo + `</td>
+            <td>` + elem.marca +` ` + elem.modelo + `</td>
             <td>` + elem.precio + `</td>
             <td>20 Febrero - 24 Febrero </td>
             <td>4 Días</td>
