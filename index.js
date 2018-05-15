@@ -21,7 +21,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     db = client.db('TallerDos');
 
     // Iniciar servidor
-    app.listen(5000 );
+    app.listen(5000);
 });
 
 
@@ -82,9 +82,26 @@ app.get('/transporte/Alquiler_Vehiculos/:id', (req, res) => {
 });
 
 
-app.get("/checkout", (req, res) => {
+
+// Dirección de visualización de checkout
+app.get('/checkout', (req, res) => {
     res.render('checkout');
 });
+
+
+//Carrito
+app.get('/productosPorIds', (req, res) => {
+    var arreglo = req.query.id.split(',');
+    arreglo = arreglo.map(function(id) {
+        return new ObjectID(id);
+    });
+    var prod = db.collection('carros')
+        .find({ _id: { $in: arreglo } })
+        .toArray((err, result) => {
+            res.send(result);
+        });
+});
+
 
 app.get("/error", (req, res) => {
     res.render('error');

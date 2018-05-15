@@ -553,7 +553,7 @@ header {
             .descargas {
                 div {
                     background: $negro;
-                    padding: 10px 0;
+                    //padding: 10px 0;
                     box-sizing: border-box;
                     transition: all .2s;
                     text-decoration: none;
@@ -561,6 +561,16 @@ header {
                     text-align: center;
                     margin-top: 10px;
                     a {
+                        padding: 10px 0;
+                        color: $colorFondo;
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+                    button{
+                        border: none;
+                        background: none;
+                        width: 100%;
+                        padding: 10px 0;
                         color: $colorFondo;
                         font-weight: 400;
                         font-size: 18px;
@@ -568,6 +578,8 @@ header {
                 }
                 div:first-child {
                     margin-left: 17%;
+                    padding: 10px 0;
+
                 }
                 div:last-child {
                     margin-right: 17%;

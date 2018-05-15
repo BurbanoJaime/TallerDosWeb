@@ -17,7 +17,6 @@
 
     <!-- Estilo del calendario -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel=" stylesheet " href=" animate.min.css ">
 
     <!-- Titulo -->
     <title>Prex | Alquiler de Vehículos </title>
@@ -110,7 +109,8 @@
                 </div>
                 <div>
                     <a href="/checkout">
-                        <i class="fas fa-truck"></i><span class="carrito">0</span>
+                        <i class="fas fa-truck"></i>
+                        <span class="carrito">0</span>
                     </a>
                 </div>
             </div>
@@ -206,7 +206,7 @@
             <section class="productos flex-basic-cont">
 
                 {{#each carros}}
-                <article>
+                <article data-id="{{this._id}}">
                     <a href="/transporte/Alquiler_Vehiculos/{{_id}}">
                         <div class="img-info">
                             <img src="{{imaUno}}">
@@ -217,6 +217,11 @@
                             <p>PRECIO DIARIO POR UNIDAD</p>
                         </div>
                     </a>
+                    <div>
+                        <button class="agregar"> Agregar a la lista de alquiler</button>
+
+                    </div>
+
                 </article>
                 {{/each}}
             </section>
@@ -299,7 +304,9 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
     <script src="/js/filtros.js"></script>
-    <script src="/js/cliente.js"></script>
+    
+        <script src="/js/cliente.js"></script>
+    <script src="/js/agregar.js"></script>
 
 </body>
 

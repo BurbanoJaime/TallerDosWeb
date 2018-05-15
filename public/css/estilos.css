@@ -591,7 +591,6 @@ header .logo img {
 
 .producto_detallado .info_prod .info .descargas div {
   background: #474747;
-  padding: 10px 0;
   box-sizing: border-box;
   transition: all .2s;
   text-decoration: none;
@@ -601,6 +600,17 @@ header .logo img {
 }
 
 .producto_detallado .info_prod .info .descargas div a {
+  padding: 10px 0;
+  color: #eaeaea;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.producto_detallado .info_prod .info .descargas div button {
+  border: none;
+  background: none;
+  width: 100%;
+  padding: 10px 0;
   color: #eaeaea;
   font-weight: 400;
   font-size: 18px;
@@ -608,6 +618,7 @@ header .logo img {
 
 .producto_detallado .info_prod .info .descargas div:first-child {
   margin-left: 17%;
+  padding: 10px 0;
 }
 
 .producto_detallado .info_prod .info .descargas div:last-child {
