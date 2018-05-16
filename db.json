@@ -53,7 +53,7 @@
             "imaSiete": "/img/transporte/Mazda 6/Imagen 7.jpg",
             "fichatec": "/fichas/Mazda 6.pdf",
             "descripcion": "La más moderna combinación del lenguaje de diseño KODO “Alma del Movimiento” de Mazda y la excepcional TECNOLOGÍA SKYACTIV establecen otro punto de referencia en estilo, placer de conducción y desempeño ambiental. Y para realzar aún más el prestigio del modelo insignia, el Mazda 6 ofrece una mejorada presentación interior de alta calidad que cuenta con cuero Napa genuino, así como una exhaustiva mejora de cada uno de los detalles interiores"
-        },{
+        }, {
             "marca": "Volkswagen",
             "modelo": "Jetta",
             "combustible": "Gasolina Corriente",
@@ -80,7 +80,7 @@
             "imaSiete": "/img/transporte/Volkswagen Jetta/Imagen 7.jpg",
             "fichatec": "/fichas/Volkswagen Jetta.pdf",
             "descripcion": "La más moderna combinación del lenguaje de diseño KODO “Alma del Movimiento” de Mazda y la excepcional TECNOLOGÍA SKYACTIV establecen otro punto de referencia en estilo, placer de conducción y desempeño ambiental. Y para realzar aún más el prestigio del modelo insignia, el Mazda 6 ofrece una mejorada presentación interior de alta calidad que cuenta con cuero Napa genuino, así como una exhaustiva mejora de cada uno de los detalles interiores"
-        },{
+        }, {
             "marca": "Renault",
             "modelo": "Logan",
             "combustible": "Gasolina Corriente",
@@ -107,7 +107,89 @@
             "imaSiete": "",
             "fichatec": "/fichas/Renault Logan.pdf",
             "descripcion": "La más moderna combinación del lenguaje de diseño KODO “Alma del Movimiento” de Mazda y la excepcional TECNOLOGÍA SKYACTIV establecen otro punto de referencia en estilo, placer de conducción y desempeño ambiental. Y para realzar aún más el prestigio del modelo insignia, el Mazda 6 ofrece una mejorada presentación interior de alta calidad que cuenta con cuero Napa genuino, así como una exhaustiva mejora de cada uno de los detalles interiores"
-        }
+        }, {
+            "marca": "Chevrolet",
+            "modelo": "Camaro Limo",
+            "combustible": "Diesel",
+            "placa": "ICZ283",
+            "ano": "2013",
+            "color": "Blanco",
+            "transmicion": "Mecánica",
+            "direccion": "Hidráulica",
+            "sonido": "Bluetooth",
+            "frenosABS": "Si",
+            "airBag": "Si",
+            "aireAcondicionado": "Si",
+            "asientos": "Cuero Dakota Negro",
+            "vidrios": "Eléctricos",
+            "espe_laterales": "Eléctricos",
+            "precio": 1104000,
 
+            "imaUno": "/img/transporte/Camaro Limo/Imagen 1.jpg",
+            "imaDos": "/img/transporte/Camaro Limo/Imagen 2.jpg",
+            "imaTres": "/img/transporte/Camaro Limo/Imagen 3.jpg",
+            "imaCuatro": "/img/transporte/Camaro Limo/Imagen 4.jpeg",
+            "imaCinco": "",
+            "imaSeis": "",
+            "imaSiete": "",
+            "fichatec": "/fichas/Camaro Limo.pdf",
+            "descripcion": "Única en Sudamérica. La Limusina Transformer Camaro ya está a tu servicio,  capacidad máxima de 8 pasajeros, puertas traseras tipo Gaviota."
+
+        }, {
+            "marca": "Renault",
+            "modelo": "Renault 4",
+            "combustible": "Corriente",
+            "placa": "ISV 121",
+            "ano": "1994",
+            "color": "Blanco",
+            "transmicion": "Mecánica",
+            "direccion": "Hidráulica",
+            "sonido": "Mp3",
+            "frenosABS": "Si",
+            "airBag": "No",
+            "aireAcondicionado": "No",
+            "asientos": "Tela Gris",
+            "vidrios": "Manuales",
+            "espe_laterales": "Manuales",
+            "precio": 428000,
+
+            "imaUno": "/img/transporte/Renault 4/Imagen 1.jpg",
+            "imaDos": "/img/transporte/Renault 4/Imagen 2.jpg",
+            "imaTres": "/img/transporte/Renault 4/Imagen 3.jpg",
+            "imaCuatro": "/img/transporte/Renault 4/Imagen 4.jpg",
+            "imaCinco": "/img/transporte/Renault 4/Imagen 5.jpg",
+            "imaSeis": "",
+            "imaSiete": "",
+            "fichatec": "/fichas/Renault 4.pdf",
+            "descripcion": "El 'cuatro latas' es pura practicidad, se mire por donde se mire. Gracias a su construcción, en la que entran en juego un bastidor plano y una carrocería de gran altura, el coche ofrece un interior amplísimo y fácil de cargar con objetos voluminosos. Además, su quinta puerta (novedad en la época) y su banqueta trasera abatible se encargaban de poner las cosas aún más fáciles. "
+        }, {
+
+            "marca": "Volkswagen",
+            "modelo": "Volkswagen t1",
+            "combustible": "Corriente",
+            "placa": "JDB 050",
+            "ano": "1975",
+            "color": "Rojo",
+            "transmicion": "Mecánica",
+            "direccion": "Hidráulica",
+            "sonido": "Mp3",
+            "frenosABS": "Si",
+            "airBag": "No",
+            "aireAcondicionado": "No",
+            "asientos": "Cubierto de cuero teñido blanco y rojo",
+            "vidrios": "Manuales",
+            "espe_laterales": "Manuales",
+            "precio": 533000,
+
+            "imaUno": "/img/transporte/Van/Imagen 1.jpg",
+            "imaDos": "/img/transporte/Van/Imagen 2.jpg",
+            "imaTres": "/img/transporte/Van/Imagen 3.jpg",
+            "imaCuatro": "/img/transporte/Van/Imagen 4.jpg",
+            "imaCinco": "",
+            "imaSeis": "",
+            "imaSiete": "",
+            "fichatec": "/fichas/Van.pdf",
+            "descripcion": "La T1 es actualmente una de las furgonetas Volkswagen más valiosas del mundo debido a su estatus de culto y su fiabilidad."
+        }
     ]
 }
