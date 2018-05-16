@@ -20,10 +20,11 @@ sans-serif;
     text-decoration: none;
 }
 
-html{
+html {
     height: 100%;
 }
-body{
+
+body {
     height: calc(100% - 190px) !important;
 }
 
@@ -126,7 +127,7 @@ header {
     margin-top: 80px;
 }
 
-#contenido{
+#contenido {
     min-height: calc(100% - 247px) !important;
 }
 
@@ -136,6 +137,7 @@ header {
     .izq {
         margin-top: 119px;
         height: 90vh;
+        width: 23%;
         .mapaSitio {
             padding: 0 $margen;
             font-style: italic;
@@ -341,16 +343,23 @@ header {
         }
     } //Visualizacion de productos
     .productos {
-        margin-left: 20px;
+        //margin-left: 20px;
         margin-top: 110px;
         float: left;
+        box-sizing: border-box;
+        width: 77%;
+        text-align: center;
+
+        button{
+            margin-top: 7px;
+        }
         article {
             width: 260px;
             background: #fafafa;
             box-sizing: border-box;
             border: 2px solid rgba(175, 175, 175, .4);
             padding-bottom: 20px;
-            margin: 10px;
+            margin: 20px;
             .img-info {
                 background-color: #FFF;
                 width: 256px;
@@ -552,8 +561,7 @@ header {
             }
             .descargas {
                 div {
-                    background: $negro;
-                    //padding: 10px 0;
+                    background: $negro; //padding: 10px 0;
                     box-sizing: border-box;
                     transition: all .2s;
                     text-decoration: none;
@@ -566,7 +574,7 @@ header {
                         font-weight: 400;
                         font-size: 18px;
                     }
-                    button{
+                    button {
                         border: none;
                         background: none;
                         width: 100%;
@@ -579,7 +587,6 @@ header {
                 div:first-child {
                     margin-left: 17%;
                     padding: 10px 0;
-
                 }
                 div:last-child {
                     margin-right: 17%;
@@ -733,7 +740,6 @@ footer {
                 background: #fff;
             }
         }
-
         tr {
             th {
                 color: $negro;
@@ -760,9 +766,8 @@ footer {
                 color: $negro;
                 font-weight: bold;
                 font-size: 20px;
-
             }
-            th:nth-child(2){
+            th:nth-child(2) {
                 color: $amarillo;
             }
             th:nth-child(3) {
