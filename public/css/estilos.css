@@ -121,6 +121,30 @@ header .logo img {
   min-height: calc(100% - 247px) !important;
 }
 
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.articulo {
+  margin: 40px 20px;
+  opacity: 0;
+  text-align: center;
+  transition: all 1s ease-out;
+}
+
+.articulo div {
+  width: 400px;
+  height: 120px;
+  background-color: #474747;
+}
+
+#animaUno.fade-in {
+  opacity: 1;
+}
+
 .contenedor {
   margin: 0 3%;
 }
