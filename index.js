@@ -15,13 +15,18 @@ app.use(express.static('public'));
 
 
 // Conectarse a Base de Datos
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('mongodb+srv://cluster0-8rmnt.mongodb.net/tienda', {
+    auth: {
+        user: 'jaimeBurbano',
+        password: 'ContraseñaSuperSegura123'
+    }
+}, function (err, client) {
     if (err) throw err;
 
-    db = client.db('TallerDos');
+    db = client.db('tienda');
 
     // Iniciar servidor
-    app.listen(5000);
+    app.listen(process.env.PORT ||5000);
 });
 
 
@@ -90,11 +95,15 @@ app.get('/checkout', (req, res) => {
 //Carrito
 app.get('/productosPorIds', (req, res) => {
     var arreglo = req.query.id.split(',');
-    arreglo = arreglo.map(function(id) {
+    arreglo = arreglo.map(function (id) {
         return new ObjectID(id);
     });
     var prod = db.collection('carros')
-        .find({ _id: { $in: arreglo } })
+        .find({
+            _id: {
+                $in: arreglo
+            }
+        })
         .toArray((err, result) => {
             res.send(result);
         });
