@@ -139,26 +139,6 @@ header {
     transform: translate(-50%, -50%);
 }
 
-
-//Animaciones del index
-.articulo{
-    margin: 40px 20px; 
-    opacity: 0;
-    text-align: center;
-    transition: all 1s ease-out;
-
-    div{
-        width: 400px;
-        height: 120px;
-        background-color:$negro;
-    }
-}
-
-#animaUno.fade-in{
-opacity: 1;
-}
-
-
 //Informacion de la pagina de visualización de productos de carros
 .contenedor {
     margin: 0 $margen;

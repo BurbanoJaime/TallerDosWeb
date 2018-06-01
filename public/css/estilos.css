@@ -128,23 +128,6 @@ header .logo img {
   transform: translate(-50%, -50%);
 }
 
-.articulo {
-  margin: 40px 20px;
-  opacity: 0;
-  text-align: center;
-  transition: all 1s ease-out;
-}
-
-.articulo div {
-  width: 400px;
-  height: 120px;
-  background-color: #474747;
-}
-
-#animaUno.fade-in {
-  opacity: 1;
-}
-
 .contenedor {
   margin: 0 3%;
 }

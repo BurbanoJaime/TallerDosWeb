@@ -29,9 +29,9 @@ MongoClient.connect('mongodb+srv://cluster0-8rmnt.mongodb.net/tienda', {
     app.listen(process.env.PORT ||5000);
 });
 
-
+//app.listen(5001);
 // Dirección del index
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index');
 });
 
