@@ -1,4 +1,4 @@
-//Zoom in del logo
+//Zoom in del logo  
 var timeline = anime.timeline();
 timeline.add({
     targets: '#LogoLapiz',
@@ -18,6 +18,7 @@ timeline.add({
     }
   });
 
+
 //Movimiento del logo hacia arriba
 function desplyLogo() {
   var timelinea = anime.timeline();
@@ -32,7 +33,13 @@ function desplyLogo() {
       duration: 2000,
       complete: function (anim) {
         somosIn();
+        delay: 300;
         hacemosIn();
+        delay: 500;
+
+        productos();
+        tproductos();
+
       }
     });
 }
@@ -51,8 +58,7 @@ function somosIn() {
       translateY: "-10vh",
       opacity: "1",
       duration: 5000,
-      complete: function (anim) {
-      }
+      complete: function (anim) {}
     });
 
 }
@@ -71,7 +77,8 @@ function somosOut() {
       translateY: "-30vh",
       opacity: "0",
       duration: 2000,
-      complete: function(anim){
+      complete: function (anim) {
+
       }
     })
 }
@@ -90,8 +97,7 @@ function hacemosIn() {
       translateY: "-10vh",
       opacity: "1",
       duration: 5000,
-      complete: function (anim) {
-      }
+      complete: function (anim) {}
     });
 
 }
@@ -109,6 +115,143 @@ function hacemosOut() {
       targets: '#QueHacemos',
       translateY: "-30vh",
       opacity: "0",
-      duration: 2000
+      duration: 2000,
+      complete: function (anim) {}
     })
 }
+
+//Productos
+function productos() {
+
+  var prod = anime.timeline();
+  prod.add({
+      targets: '#productos article div',
+      translateY: "2vh",
+      direction: "alternate",
+      opacity: 0,
+      duration: function (el, i, l) {
+        return 500 + (i * 200);
+      }
+    })
+    .add({
+      targets: '#productos article div',
+      translateY: "0",
+      direction: "alternate",
+      opacity: 1,
+      duration: function (el, i, l) {
+        return 500 + (i * 200);
+      },
+    });
+}
+
+//Productos salir
+function productosOut() {
+
+  var prod = anime.timeline();
+  prod.add({
+      targets: '#productos article div',
+      translateY: "0",
+      direction: "alternate",
+      opacity: 1,
+      duration: function (el, i, l) {
+        return 500 + (i * 200);
+      }
+    })
+    .add({
+      targets: '#productos article div',
+      translateY: "-6vh",
+      direction: "alternate",
+      opacity: 0,
+      duration: function (el, i, l) {
+        return 500 + (i * 200);
+      },
+    });
+}
+
+//Productos
+function tproductos() {
+
+  var prod = anime.timeline();
+  prod.add({
+      targets: '#tituloProductos',
+      translateY: "2vh",
+      direction: "alternate",
+      opacity: 0,
+      duration: function (el, i, l) {
+        return 1000 + (i * 200);
+      }
+    })
+    .add({
+      targets: '#tituloProductos',
+      translateY: "0",
+      direction: "alternate",
+      opacity: 1,
+      duration: function (el, i, l) {
+        return 1000 + (i * 200);
+      }
+    });
+}
+
+function tproductosOut() {
+  var prod = anime.timeline();
+  prod.add({
+      targets: '#tituloProductos',
+      translateY: "1",
+      direction: "alternate",
+      opacity: 0,
+      duration: function (el, i, l) {
+        return 1000 + (i * 200);
+      }
+    })
+    .add({
+      targets: '#tituloProductos',
+      translateY: "2vh",
+      direction: "alternate",
+      opacity: 0,
+      duration: function (el, i, l) {
+        return 1000 + (i * 200);
+      }
+    });
+}
+
+
+var transporte = document.getElementById("transporte");
+var scouting = document.getElementById("#scouting");
+var casting = document.getElementById("#casting");
+var decoracion = document.getElementById("#decoracion");
+var otros = document.getElementById("#otros");
+
+transporte.addEventListener('click', function (e) {
+  e.preventDefault();
+  salir();
+  infoTransporte();
+
+});
+
+function salir() {
+  productosOut();
+  tproductosOut();
+  somosOut();
+  hacemosOut();
+}
+
+
+function infoTransporte(e){
+e.preventDefault();
+}
+
+var carro = anime.timeline();
+carro.add({
+  targets: '#transporte',
+  translateX: 250,
+  translateY: -500,
+  easing: [.91,-0.54,.29,1.56],
+  opacity: 0
+})
+.add({
+  targets: '#transporte',
+  translateX: 250,
+  translateY: -500,
+  easing: [.91,-0.54,.29,1.56],
+  opacity: 1
+});

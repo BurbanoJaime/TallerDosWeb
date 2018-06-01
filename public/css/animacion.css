@@ -108,6 +108,11 @@ body {
   align-items: center;
 }
 
+#contenido #infoGeneral .derecha #productos article div {
+  transform: translateY(2vh);
+  opacity: 0;
+}
+
 #contenido #infoGeneral .derecha #productos article div div {
   text-align: center;
   margin: 0 50px;
@@ -132,6 +137,8 @@ body {
 
 #contenido #infoGeneral .derecha #tituloProductos {
   margin-top: 20px;
+  opacity: 0;
+  transform: translateY(2vh);
 }
 
 #contenido #infoGeneral .derecha #tituloProductos div {

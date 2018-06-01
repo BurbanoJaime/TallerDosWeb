@@ -104,6 +104,8 @@ body {
                     align-content: stretch;
                     align-items: center;
                     div {
+                        transform: translateY(2vh);
+                        opacity: 0;
                         div {
                             text-align: center;
                             margin: 0 50px;
@@ -130,6 +132,8 @@ body {
             }
             #tituloProductos {
                 margin-top: 20px;
+                opacity: 0;
+                transform: translateY(2vh);
                 div {
                     margin: 0;
                     h1 {
