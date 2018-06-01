@@ -17,63 +17,140 @@ body {
 }
 
 #contenido {
-  margin: 119px 3% 0 3%;
+  margin: 119px 3%;
 }
 
-#contenido section article {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+#contenido #logoAnimado article {
   text-align: center;
-  transition: all .4s;
 }
 
-#contenido section article #LogoLapiz {
-  width: 40%;
-  margin-top: 6%;
+#contenido #logoAnimado article #Logolapiz {
+  transform: translateY(20vh);
   opacity: 0;
 }
 
-#contenido section article #LogoLapiz svg {
-  fill: #747474;
+#contenido #logoAnimado article #Logolapiz img {
+  width: 100%;
 }
 
-#contenido section article #LogoLapiz:hover svg {
-  transform: scale(1.1);
+#contenido #infoGeneral {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+#contenido #infoGeneral .izquierda {
+  width: 40%;
+  margin-left: 10%;
+}
+
+#contenido #infoGeneral .izquierda #QuienesSomos {
+  margin: 10px;
+  opacity: 0;
+}
+
+#contenido #infoGeneral .izquierda #QuienesSomos div {
+  width: 70%;
+  text-align: justify;
+}
+
+#contenido #infoGeneral .izquierda #QuienesSomos div h1 {
+  font-family: "Special Elite", cursive;
+  color: #fab400;
+  font-size: 35px;
+  text-align: left;
+}
+
+#contenido #infoGeneral .izquierda #QuienesSomos div p {
+  font-family: "Titillium Web", sans-serif;
+}
+
+#contenido #infoGeneral .izquierda #QueHacemos {
+  margin: 10px;
+  opacity: 0;
+}
+
+#contenido #infoGeneral .izquierda #QueHacemos div {
+  width: 70%;
+  text-align: justify;
+}
+
+#contenido #infoGeneral .izquierda #QueHacemos div h1 {
+  font-family: "Special Elite", cursive;
+  color: #fab400;
+  font-size: 35px;
+  text-align: right;
+}
+
+#contenido #infoGeneral .izquierda #QueHacemos div p {
+  font-family: "Titillium Web", sans-serif;
+}
+
+#contenido #infoGeneral .derecha {
+  width: 60%;
+}
+
+#contenido #infoGeneral .derecha #productos {
+  justify-content: center;
+  align-items: center;
+  margin-right: 20%;
+}
+
+#contenido #infoGeneral .derecha #productos article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+#contenido #infoGeneral .derecha #productos article div div {
+  text-align: center;
+  margin: 0 50px;
+}
+
+#contenido #infoGeneral .derecha #productos article div div img {
+  width: 80%;
+}
+
+#contenido #infoGeneral .derecha #productos article div div h3 {
+  color: #afafaf;
+  font-family: "Special Elite", cursive;
+}
+
+#contenido #infoGeneral .derecha #productos article div:hover div img {
   fill: #fab400;
 }
 
-#contenido section article h1 {
-  font-family: "Special Elite", cursive;
-  font-size: 30px;
+#contenido #infoGeneral .derecha #productos article div:hover div h3 {
   color: #fab400;
 }
 
-#contenido section #QuienesSomos {
-  display: block;
-  width: 500px;
-  text-align: justify;
+#contenido #infoGeneral .derecha #tituloProductos {
+  margin-top: 20px;
+}
+
+#contenido #infoGeneral .derecha #tituloProductos div {
   margin: 0;
-  margin: 15px;
-  opacity: 0;
-  transform: translateY(0);
 }
 
-#contenido section #QuienesSomos:hover h1 {
+#contenido #infoGeneral .derecha #tituloProductos div h1 {
+  font-family: "Special Elite", cursive;
   color: #fab400;
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
 }
 
-#contenido section #QueHacemos {
-  display: block;
-  width: 500px;
-  text-align: justify;
-  margin: 15px;
-  opacity: 0;
-  transform: translateY(0);
-}
-
-#contenido section #QueHacemos:hover h1 {
-  color: #fab400;
+#contenido #infoGeneral .derecha #tituloProductos div h2 {
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  color: #afafaf;
+  text-align: center;
+  margin: 0;
 }
 /*# sourceMappingURL=animacion.css.map */

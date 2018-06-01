@@ -32,61 +32,121 @@ body {
 
 //Animaciones del index
 #contenido {
-    margin: 119px $margen 0 $margen;
-    section {
+    margin: 119px $margen;
+    #logoAnimado {
         article {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
             text-align: center;
-            transition: all .4s;
-            #LogoLapiz {
-                width: 40%;
-                margin-top: 6%;
+            #Logolapiz {
+                transform: translateY(20vh);
                 opacity: 0;
-                svg {
-                    fill: #747474;
+                img {
+                    width: 100%;
                 }
             }
-            #LogoLapiz:hover {
-                svg {
-                    transform: scale(1.1);
-                    fill: $amarillo;
+        }
+    }
+    #infoGeneral {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+        .izquierda {
+            width: 40%;
+            margin-left: 10%;
+            #QuienesSomos {
+                margin: 10px;
+                opacity: 0;
+                div {
+                    width: 70%;
+                    text-align: justify;
+                    h1 {
+                        font-family: $animacion;
+                        color: $amarillo;
+                        font-size: 35px;
+                        text-align: left;
+                    }
+                    p {
+                        font-family: $titilium;
+                    }
                 }
             }
-            h1 {
-                font-family: $animacion;
-                font-size: 30px;
-                color: $amarillo;
-
+            #QueHacemos {
+                margin: 10px;
+                opacity: 0;
+                div {
+                    width: 70%;
+                    text-align: justify;
+                    h1 {
+                        font-family: $animacion;
+                        color: $amarillo;
+                        font-size: 35px;
+                        text-align: right;
+                    }
+                    p {
+                        font-family: $titilium;
+                    }
+                }
             }
         }
-        #QuienesSomos {
-            display: block;
-            width: 500px;
-            text-align: justify;
-            margin: 0;
-            margin: 15px;
-            opacity: 0;
-            transform: translateY(0);
-        }
-        #QuienesSomos:hover {
-            h1 {
-                color: $amarillo;
+        .derecha {
+            width: 60%;
+            #productos {
+                justify-content: center;
+                align-items: center;
+                margin-right: 20%;
+                article {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-content: stretch;
+                    align-items: center;
+                    div {
+                        div {
+                            text-align: center;
+                            margin: 0 50px;
+                            img {
+                                width: 80%;
+                            }
+                            h3 {
+                                color: #afafaf;
+                                font-family: $animacion;
+                            }
+                        }
+                    }
+                    div:hover {
+                        div {
+                            img {
+                                fill: $amarillo;
+                            }
+                            h3 {
+                                color: $amarillo;
+                            }
+                        }
+                    }
+                }
             }
-        }
-        #QueHacemos {
-            display: block;
-            width: 500px;
-            text-align: justify;
-            margin: 15px;
-            opacity: 0;
-            transform: translateY(0);
-        }
-        #QueHacemos:hover {
-            h1 {
-                color: $amarillo;
+            #tituloProductos {
+                margin-top: 20px;
+                div {
+                    margin: 0;
+                    h1 {
+                        font-family: $animacion;
+                        color: $amarillo;
+                        font-size: 35px;
+                        text-align: center;
+                        margin: 0;
+                    }
+                    h2 {
+                        font-family: $signikia;
+                        font-weight: bold;
+                        color: $gris;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
             }
         }
     }

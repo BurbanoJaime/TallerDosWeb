@@ -2,15 +2,17 @@
 var timeline = anime.timeline();
 timeline.add({
     targets: '#LogoLapiz',
-    scale: '0',
+    scale: '1',
+    translateY: "20vh",
     opacity: 0,
     duration: 500
   })
   .add({
     targets: '#LogoLapiz',
-    scale: ".8",
+    scale: "1",
     opacity: 1,
-    duration: 5500,
+    translateY: "20vh",
+    duration: 3000,
     complete: function (anim) {
       desplyLogo();
     }
@@ -22,16 +24,15 @@ function desplyLogo() {
 
   timelinea.add({
       targets: '#LogoLapiz',
-      scale: '.8',
-      translateY: "0",
+      scale: '1',
     })
     .add({
       targets: '#LogoLapiz',
-      scale: '0.5',
-      translateY: "-30vh",
+      scale: '0.8',
       duration: 2000,
       complete: function (anim) {
         somosIn();
+        hacemosIn();
       }
     });
 }
@@ -51,7 +52,6 @@ function somosIn() {
       opacity: "1",
       duration: 5000,
       complete: function (anim) {
-        somosOut();
       }
     });
 
@@ -72,7 +72,6 @@ function somosOut() {
       opacity: "0",
       duration: 2000,
       complete: function(anim){
-        hacemosIn();
       }
     })
 }
@@ -82,17 +81,16 @@ function hacemosIn() {
 
   var somos = anime.timeline();
   somos.add({
-      targets: '#QuienesSomos',
+      targets: '#QueHacemos',
       translateY: "0",
       opacity: "0",
     })
     .add({
-      targets: '#QuienesSomos',
+      targets: '#QueHacemos',
       translateY: "-10vh",
       opacity: "1",
       duration: 5000,
       complete: function (anim) {
-        hacemosOut();
       }
     });
 
@@ -103,12 +101,12 @@ function hacemosIn() {
 function hacemosOut() {
   var somos = anime.timeline();
   somos.add({
-      targets: '#QuienesSomos',
+      targets: '#QueHacemos',
       translateY: "-10vh",
       opacity: "1",
     })
     .add({
-      targets: '#QuienesSomos',
+      targets: '#QueHacemos',
       translateY: "-30vh",
       opacity: "0",
       duration: 2000
