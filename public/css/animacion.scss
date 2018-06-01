@@ -8,10 +8,13 @@ $margen: 3%;
 //Fuentes   
 @import url('https://fonts.googleapis.com/css?family=Signika:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 $titilium: 'Titillium Web',
 sans-serif;
 $signikia: 'Signika',
 sans-serif;
+$animacion: 'Special Elite',
+cursive;
 * {
     font-family: $signikia;
     padding: 0;
@@ -20,41 +23,71 @@ sans-serif;
     text-decoration: none;
 }
 
+body {
+    background-image: url("/img/fondoc.png");
+    background-repeat: repeat;
+    background-size: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 //Animaciones del index
 #contenido {
-    .primerAnimacion{
-        margin: 119px $margen;
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-content: stretch;
-        align-items: center;
-    .animacionLogo {
-        display: flex;
-        width: 20%;
-        align-items: center;
-        height: 66.4vh;
-        #logoAnimado {
-            width: 100%;
-            margin: 119px $margen;
-            //opacity: 0;
-            transition: all .5s;
-            .parteAmarilla {
-                fill: $amarillo;
+    margin: 119px $margen 0 $margen;
+    section {
+        article {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            transition: all .4s;
+            #LogoLapiz {
+                width: 40%;
+                margin-top: 6%;
+                opacity: 0;
+                svg {
+                    fill: #747474;
+                }
             }
-            .parteNegra {
-                fill: #282828;
+            #LogoLapiz:hover {
+                svg {
+                    transform: scale(1.1);
+                    fill: $amarillo;
+                }
+            }
+            h1 {
+                font-family: $animacion;
+                font-size: 30px;
+                color: $amarillo;
+
             }
         }
-    }
-
-    #descripcion{
-        opacity: 1;
-        div{
-            width: 40%;
+        #QuienesSomos {
+            display: block;
+            width: 500px;
             text-align: justify;
+            margin: 0;
+            margin: 15px;
+            opacity: 0;
+            transform: translateY(0);
+        }
+        #QuienesSomos:hover {
+            h1 {
+                color: $amarillo;
+            }
+        }
+        #QueHacemos {
+            display: block;
+            width: 500px;
+            text-align: justify;
+            margin: 15px;
+            opacity: 0;
+            transform: translateY(0);
+        }
+        #QueHacemos:hover {
+            h1 {
+                color: $amarillo;
+            }
         }
     }
-}}
+}

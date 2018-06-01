@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Signika:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 * {
   font-family: "Signika", sans-serif;
   padding: 0;
@@ -8,43 +9,71 @@
   text-decoration: none;
 }
 
-#contenido .primerAnimacion {
-  margin: 119px 3%;
+body {
+  background-image: url("/img/fondoc.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#contenido {
+  margin: 119px 3% 0 3%;
+}
+
+#contenido section article {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
-  align-content: stretch;
+  align-content: center;
   align-items: center;
+  text-align: center;
+  transition: all .4s;
 }
 
-#contenido .primerAnimacion .animacionLogo {
-  display: flex;
-  width: 20%;
-  align-items: center;
-  height: 66.4vh;
+#contenido section article #LogoLapiz {
+  width: 40%;
+  margin-top: 6%;
+  opacity: 0;
 }
 
-#contenido .primerAnimacion .animacionLogo #logoAnimado {
-  width: 100%;
-  margin: 119px 3%;
-  transition: all .5s;
+#contenido section article #LogoLapiz svg {
+  fill: #747474;
 }
 
-#contenido .primerAnimacion .animacionLogo #logoAnimado .parteAmarilla {
+#contenido section article #LogoLapiz:hover svg {
+  transform: scale(1.1);
   fill: #fab400;
 }
 
-#contenido .primerAnimacion .animacionLogo #logoAnimado .parteNegra {
-  fill: #282828;
+#contenido section article h1 {
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+  color: #fab400;
 }
 
-#contenido .primerAnimacion #descripcion {
-  opacity: 1;
-}
-
-#contenido .primerAnimacion #descripcion div {
-  width: 40%;
+#contenido section #QuienesSomos {
+  display: block;
+  width: 500px;
   text-align: justify;
+  margin: 0;
+  margin: 15px;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+#contenido section #QuienesSomos:hover h1 {
+  color: #fab400;
+}
+
+#contenido section #QueHacemos {
+  display: block;
+  width: 500px;
+  text-align: justify;
+  margin: 15px;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+#contenido section #QueHacemos:hover h1 {
+  color: #fab400;
 }
 /*# sourceMappingURL=animacion.css.map */
