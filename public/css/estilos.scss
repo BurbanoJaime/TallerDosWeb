@@ -131,6 +131,14 @@ header {
     min-height: calc(100% - 247px) !important;
 }
 
+.content{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 //Informacion de la pagina de visualización de productos de carros
 .contenedor {
     margin: 0 $margen;

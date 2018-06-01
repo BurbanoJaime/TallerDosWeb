@@ -1,0 +1,60 @@
+//Colores
+$colorFondo: #eaeaea;
+$amarillo: #fab400;
+$negro: #474747;
+$gris: #afafaf;
+//espacios
+$margen: 3%;
+//Fuentes   
+@import url('https://fonts.googleapis.com/css?family=Signika:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,700i');
+$titilium: 'Titillium Web',
+sans-serif;
+$signikia: 'Signika',
+sans-serif;
+* {
+    font-family: $signikia;
+    padding: 0;
+    margin: 0;
+    transition: all .15s;
+    text-decoration: none;
+}
+
+//Animaciones del index
+#contenido {
+    .primerAnimacion{
+        margin: 119px $margen;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    .animacionLogo {
+        display: flex;
+        width: 20%;
+        align-items: center;
+        height: 66.4vh;
+        #logoAnimado {
+            width: 100%;
+            margin: 119px $margen;
+            //opacity: 0;
+            transition: all .5s;
+            .parteAmarilla {
+                fill: $amarillo;
+            }
+            .parteNegra {
+                fill: #282828;
+            }
+        }
+    }
+
+    #descripcion{
+        opacity: 1;
+        div{
+            width: 40%;
+            text-align: justify;
+        }
+    }
+}}

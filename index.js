@@ -30,7 +30,7 @@ MongoClient.connect('mongodb+srv://cluster0-8rmnt.mongodb.net/tienda', {
 });
 
 // Dirección del index
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index');
 });
 
@@ -48,8 +48,6 @@ app.get('/transporte/Alquiler_Vehiculos', (req, res) => {
 
             }
         });
-
-
 
 
     //Filtro de color
@@ -96,11 +94,15 @@ app.get('/checkout', (req, res) => {
 //Carrito
 app.get('/productosPorIds', (req, res) => {
     var arreglo = req.query.id.split(',');
-    arreglo = arreglo.map(function(id) {
+    arreglo = arreglo.map(function (id) {
         return new ObjectID(id);
     });
     var prod = db.collection('carros')
-        .find({ _id: { $in: arreglo } })
+        .find({
+            _id: {
+                $in: arreglo
+            }
+        })
         .toArray((err, result) => {
             res.send(result);
         });
